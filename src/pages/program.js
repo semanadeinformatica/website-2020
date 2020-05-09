@@ -66,6 +66,8 @@ const ProgramPage = ({ data }) => {
     if (activeTab !== tab) setActiveTab(tab)
   }
 
+  console.log(activeTab)
+
   return (
     <Layout>
       <SEO title="Program" />
@@ -78,7 +80,7 @@ const ProgramPage = ({ data }) => {
           activeTab={activeTab}
           toggle={toggle}
         />
-        <TabContent activeTab={activeTab.date}>
+        <TabContent activeTab={activeTab.date.toLowerCase()}>
           {days.map(day => (
             <TabPane
               key={day[0].node.frontmatter.day}

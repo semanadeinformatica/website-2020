@@ -1,6 +1,6 @@
-# Semana de Informática - Website 2019
+# Semana de Informática - Website 2020
 
-Website for the 2019 edition of [Semana de Informática](https://sinf.pt), taking place at Faculty of Engineering of the University of Porto from October 28 to 30.
+Website for the 2020 edition of [Semana de Informática](https://sinf.pt).
 
 Made with ❤️ by NIAEFEUP.
 
@@ -16,7 +16,7 @@ Made with ❤️ by NIAEFEUP.
 ### Development
 
 ```bash
-npm install # use node version 10.16.0
+npm install # use node version 12.16.3
 gatsby develop
 ```
 
