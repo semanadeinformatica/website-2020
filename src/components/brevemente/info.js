@@ -1,7 +1,12 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap"
 import SoonStyles from "../../styles/soon.module.css"
-import { FaLinkedin, FaFacebookSquare, FaEnvelope } from "react-icons/fa"
+import {
+  FaLinkedin,
+  FaFacebookSquare,
+  FaEnvelope,
+  FaInstagram,
+} from "react-icons/fa"
 
 const links = [
   {
@@ -13,24 +18,24 @@ const links = [
     href: "https://facebook.com/sinfFEUP",
   },
   {
-    icon: <FaEnvelope />,
-    href: "mailto:geral@sinf.pt",
+    icon: <FaInstagram />,
+    href: "https://www.instagram.com/niaefeup",
   },
+  //{
+  //  icon: <FaEnvelope />,
+  //  href: "mailto:geral@sinf.pt",
+  //},
 ]
+
+//TODO change social media link icons
 
 const Info = () => {
   return (
     <Container fluid>
       <Row className={SoonStyles.info}>
-        <Col xs="12" md="5">
-          <div className={SoonStyles.text_info}>
-            O site está em remodelação.
-            <br />
-            Pedimos desculpa pelo incómodo!
-          </div>
-        </Col>
-        <Col xs="12" md="5">
+        <Col xs="12">
           <div className={SoonStyles.text_info + " " + SoonStyles.left_text}>
+            <h4 className={SoonStyles.info_title}>Visita a nossa página!</h4>
             <div className={SoonStyles.icon_links}>
               {links.map(({ icon, href }, index) => (
                 <a href={href} className={SoonStyles.icon_link} key={index}>
@@ -38,7 +43,6 @@ const Info = () => {
                 </a>
               ))}
             </div>
-            <p>28 a 30 outubro | FEUP</p>
           </div>
         </Col>
       </Row>
