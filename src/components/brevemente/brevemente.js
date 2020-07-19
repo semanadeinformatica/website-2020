@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import SoonStyles from "../../styles/soon.module.css"
-import Icon from "../../images/svg/gradient-outline.inline.svg"
+import Icon from "../../images/svg/logo-outline-white.inline.svg"
 
 const Brevemente = () => {
   return (
