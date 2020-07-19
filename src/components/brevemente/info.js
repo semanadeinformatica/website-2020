@@ -1,24 +1,24 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap"
 import SoonStyles from "../../styles/soon.module.css"
+
 import {
-  FaLinkedin,
-  FaFacebookSquare,
-  FaEnvelope,
-  FaInstagram,
-} from "react-icons/fa"
+  AiOutlineFacebook,
+  AiOutlineLinkedin,
+  AiOutlineInstagram,
+} from "react-icons/ai"
 
 const links = [
   {
-    icon: <FaLinkedin />,
+    icon: <AiOutlineLinkedin />,
     href: "https://www.linkedin.com/company/sinffeup/",
   },
   {
-    icon: <FaFacebookSquare />,
+    icon: <AiOutlineFacebook />,
     href: "https://facebook.com/sinfFEUP",
   },
   {
-    icon: <FaInstagram />,
+    icon: <AiOutlineInstagram />,
     href: "https://www.instagram.com/niaefeup",
   },
   //{
@@ -27,7 +27,7 @@ const links = [
   //},
 ]
 
-//TODO change social media link icons
+//TODO change instagram link to sinf link when available
 
 const Info = () => {
   return (

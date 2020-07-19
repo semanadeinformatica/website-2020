@@ -135,13 +135,10 @@ div.content_container {
   color: var(--white);
 }
 
-/*
 .icon_links a svg {
-  color: transparent;
-  stroke-width: 20px;
-  stroke: white;
+  height: 1.5em;
+  width: auto;
 }
-*/
 
 .icon_links a:hover {
   color: var(--white);

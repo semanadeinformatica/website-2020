@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import SoonStyles from "../../styles/soon.module.css"
 import Icon from "../../images/svg/logo-outline-white.inline.svg"
 
+//TODO change link to point to 2019 edition
 const Brevemente = () => {
   return (
     <div className={SoonStyles.banner}>
