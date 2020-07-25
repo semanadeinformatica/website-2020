@@ -19,15 +19,9 @@ const links = [
   },
   {
     icon: <AiOutlineInstagram />,
-    href: "https://www.instagram.com/niaefeup",
+    href: "https://www.instagram.com/sinffeup/",
   },
-  //{
-  //  icon: <FaEnvelope />,
-  //  href: "mailto:geral@sinf.pt",
-  //},
 ]
-
-//TODO change instagram link to sinf link when available
 
 const Info = () => {
   return (
