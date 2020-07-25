@@ -1,4 +1,5 @@
 import React from "react"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import SEO from "../components/common/seo"
 import SoonStyles from "../styles/soon.module.css"
