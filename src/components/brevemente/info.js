@@ -31,8 +31,8 @@ const Info = () => {
           <div className={SoonStyles.text_info + " " + SoonStyles.left_text}>
             <h4 className={SoonStyles.info_title}>Visita a nossa página!</h4>
             <div className={SoonStyles.icon_links}>
-              {links.map(({ icon, href }, index) => (
-                <a href={href} className={SoonStyles.icon_link} key={index}>
+              {links.map(({ icon, href }) => (
+                <a href={href} className={SoonStyles.icon_link} key={href}>
                   {icon}
                 </a>
               ))}
