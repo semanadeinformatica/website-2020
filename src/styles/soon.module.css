@@ -201,7 +201,7 @@ div.content_container {
 }
 
 /* Making the banner disapear on phones flipped horizontaly*/
-@media (max-height: 530px) {
+@media (max-height: 400px) {
   .banner {
     display: none;
   }
