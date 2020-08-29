@@ -38,9 +38,6 @@ const SponsorSection = ({ sponsorData, type }) => {
   return (
     numDesktop > 0 && (
       <div className={[sponsorsStyles.otherSponsors, wrapperType].join(" ")}>
-        <div className={[sponsorsStyles.sponsorsType, sponsorText].join(" ")}>
-          {sponsorType}
-        </div>
         <Carousel
           numMobileItems={1}
           numTabletItems={1}

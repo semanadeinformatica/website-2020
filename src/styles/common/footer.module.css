@@ -1,8 +1,8 @@
 @import "./palette.css";
 
 .footerContainer {
-  background-color: var(--color2);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--color5);
   font-size: 12px;
 }
 

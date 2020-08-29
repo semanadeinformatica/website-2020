@@ -1,7 +1,7 @@
 @import "../common/palette.css";
 
 .aboutContainer {
-  background-color: var(--color1);
+  background-color: var(--color2);
   color: var(--white);
 }
 

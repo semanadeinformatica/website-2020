@@ -1,5 +1,5 @@
 import React from "react"
-import { FaLinkedin, FaFacebookSquare, FaEnvelope } from "react-icons/fa"
+import { FaLinkedin, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa"
 import BannerStyles from "../../../styles/mainpage/banner.module.css"
 
 const links = [
@@ -12,16 +12,16 @@ const links = [
     href: "https://facebook.com/sinfFEUP",
   },
   {
-    icon: <FaEnvelope />,
-    href: "mailto:geral@sinf.pt",
+    icon: <FaInstagramSquare />,
+    href: "https://instagram.com/sinffeup",
   },
 ]
 
 const BasicInfo = () => {
   return (
     <div className={BannerStyles.info}>
-      <p>2ª EDIÇÃO</p>
-      <p>28 A 30 OUTUBRO 2019 | FEUP</p>
+      <p>3ª EDIÇÃO</p>
+      <p>9 A 11 DE NOVEMBRO 2020 | FEUP</p>
       <div className={BannerStyles.icon_links}>
         {links.map(({ icon, href }, index) => (
           <a href={href} className={BannerStyles.icon_link} key={index}>

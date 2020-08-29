@@ -17,11 +17,8 @@ import MainpageStyles from "../styles/mainpage/mainpage.module.css"
 const IndexPage = () => (
   <div>
     <SEO title="Home" />
-    <div className={MainpageStyles.top_bar}>
-      <Navbar transparent />
-    </div>
-    <Banner />
     <Layout>
+      <Banner />
       <About />
       <Speakers />
       <Tickets />

@@ -7,12 +7,16 @@ import {
   Nav,
   NavItem,
   NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from "reactstrap"
 
 import Logo from "../../images/svg/logo_sinf_simp.inline.svg"
 import NavbarStyles from "../../styles/common/navbar.module.css"
 
-const NavWrapper = ({ links, className, closeDrawer }) => (
+const NavWrapper = ({ links, className, closeDrawer, children }) => (
   <Nav navbar className={className}>
     {links.map(({ internal, url, text }) => (
       <NavItem className="px-2" key={text}>
@@ -32,6 +36,7 @@ const NavWrapper = ({ links, className, closeDrawer }) => (
         )}
       </NavItem>
     ))}
+    {children}
   </Nav>
 )
 
@@ -91,11 +96,11 @@ export default class NavBar extends React.Component {
         text: "Competição",
         internal: true,
       },
-      {
-        url: "https://2018.sinf.pt",
-        text: "2018",
-        internal: false,
-      },
+    ]
+
+    this.pastEditions = [
+      { url: "https://2018.sinf.pt", year: "2018" },
+      { url: "https://2019.sinf.pt", year: "2019" },
     ]
   }
 
@@ -152,7 +157,22 @@ export default class NavBar extends React.Component {
               className="ml-auto align-items-center"
               links={this.rightLinks}
               closeDrawer={this.closeDrawer}
-            />
+            >
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav className={NavbarStyles.navLink}>
+                  Edições anteriores
+                </DropdownToggle>
+                <DropdownMenu right>
+                  {this.pastEditions.map(({ url, year }) => (
+                    <DropdownItem key={year}>
+                      <NavLink href={url} className={NavbarStyles.dropdownLink}>
+                        {year}
+                      </NavLink>
+                    </DropdownItem>
+                  ))}
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </NavWrapper>
           </Collapse>
           <NavbarToggler
             className={NavbarStyles.toggler}

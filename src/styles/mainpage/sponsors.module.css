@@ -4,18 +4,12 @@
 }
 
 .h2 {
-  text-align: center;
-  font-weight: bold;
-  color: var(--color1);
-  margin-bottom: 5rem;
+  color: var(--color5) !important;
 }
 
 .headingLine {
-  width: 3.5rem;
-  height: 2px;
-  margin: 0.2rem auto;
-  color: var(--color1);
-  background-color: var(--color1);
+  color: var(--color5) !important;
+  background-color: var(--color5) !important;
 }
 
 .sponsorsType {
