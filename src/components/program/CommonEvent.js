@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { Collapse } from "reactstrap"
+import Collapse from "react-bootstrap/Collapse"
 
 import TimePlace from "./TimePlace"
 import Speakers from "./Speakers"
@@ -45,7 +45,7 @@ const CommonEvent = ({ color, event }) => {
         </h3>
         {speakers && <Speakers speakers={speakers} path={path} />}
         <TimePlace start_time={start_time} end_time={end_time} place={place} />
-        <Collapse isOpen={showAll}>
+        <Collapse in={showAll}>
           <div
             className={eventsStyles.description}
             dangerouslySetInnerHTML={{ __html: html }}

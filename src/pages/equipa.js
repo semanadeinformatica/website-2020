@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { Container } from "reactstrap"
+import Container from "react-bootstrap/Container"
 
 import SEO from "../components/common/seo"
 import Layout from "../components/common/layout"

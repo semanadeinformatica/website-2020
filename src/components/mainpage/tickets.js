@@ -1,5 +1,5 @@
 import React from "react"
-import { Container } from "reactstrap"
+import Container from "react-bootstrap/Container"
 import ticketsStyles from "../../styles/mainpage/tickets.module.css"
 
 const Tickets = () => (

@@ -1,6 +1,5 @@
 import React from "react"
-import { Row } from "reactstrap"
-
+import Row from "react-bootstrap/Row"
 import ParticipateStyles from "../../styles/talk/participate.module.css"
 
 const Participate = ({ href }) => {

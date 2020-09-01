@@ -1,5 +1,7 @@
 import React from "react"
-import { Container, Col, Row } from "reactstrap"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 import Contacts from "./contacts"
 
 import ContactStyles from "../../../styles/mainpage/contacts.module.css"
