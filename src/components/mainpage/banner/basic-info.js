@@ -21,7 +21,7 @@ const BasicInfo = () => {
   return (
     <div className={BannerStyles.info}>
       <p>3ª EDIÇÃO</p>
-      <p>9 A 11 DE NOVEMBRO 2020 | FEUP</p>
+      <p>9 A 11 DE NOVEMBRO</p>
       <div className={BannerStyles.icon_links}>
         {links.map(({ icon, href }, index) => (
           <a href={href} className={BannerStyles.icon_link} key={index}>
