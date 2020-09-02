@@ -33,6 +33,36 @@
   text-decoration: underline;
 }
 
+.imageContainer {
+  position: relative;
+  margin-top: -20px;
+  padding: 1rem;
+  height: 400px;
+}
+
+.imageContainer:after {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -5px;
+  right: 10px;
+  border-bottom: 8px solid var(--white);
+  border-right: 8px solid var(--white);
+}
+
+.imageContainer:before {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  border-top: 8px solid var(--white);
+  border-left: 8px solid var(--white);
+}
 @media screen and (max-width: 575px) {
   .aboutContainer .countdownContainer .number {
     font-size: 30px;
