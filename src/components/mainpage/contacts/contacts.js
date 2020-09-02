@@ -37,18 +37,19 @@ const links = [
 ]
 
 const Contacts = () => (
-  <div>
-    <Col className={ContactStyles.title_container}>
-      <h2 className={mainStyles.h2}>
-        Contactos <hr className={mainStyles.headingLine} />
-      </h2>
-    </Col>
-
+  <Col className={ContactStyles.title_container}>
+    <h2 className={mainStyles.h2}>
+      Contactos <hr className={mainStyles.headingLine} />
+    </h2>
     <Container>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+      <div className={ContactStyles.linkContainer}>
         {links.map((link, index) => {
           return (
-            <a href={link.href} className={ContactStyles.link}>
+            <a
+              href={link.href}
+              className={ContactStyles.link}
+              style={{ justifySelf: index % 2 === 0 ? "start" : "end" }}
+            >
               <span className={ContactStyles.icon}>{link.icon}</span>
               {link.text}
             </a>
@@ -56,7 +57,7 @@ const Contacts = () => (
         })}
       </div>
     </Container>
-  </div>
+  </Col>
 )
 
 export default Contacts

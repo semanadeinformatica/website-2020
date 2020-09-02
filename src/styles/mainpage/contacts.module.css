@@ -50,7 +50,6 @@ div.location_col {
 
 .link {
   display: flex;
-  justify-content: center;
   align-items: baseline;
 }
 
@@ -73,6 +72,12 @@ div.location_col {
 .icon {
   margin-right: 0.6em;
   font-size: 1.6em;
+}
+
+.linkContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10rem;
 }
 
 @media (max-width: 767.98px) {
