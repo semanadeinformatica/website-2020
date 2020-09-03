@@ -1,5 +1,6 @@
 .sponsorsSection {
-  margin: 7rem 0;
+  padding: 15rem 0 7rem 0;
+  background-image: linear-gradient(var(--color5), 5%, var(--white) 10%);
 }
 
 .h2 {

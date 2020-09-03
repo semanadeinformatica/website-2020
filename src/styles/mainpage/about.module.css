@@ -1,9 +1,9 @@
 @import "../common/palette.css";
 
 .aboutContainer {
-  background-color: var(--color2);
+  background-image: linear-gradient(var(--color2), var(--color3) 90%);
   color: var(--white);
-  padding: 7rem 0;
+  padding: 7rem 0 4rem 0;
 }
 
 .aboutContainer .title {
