@@ -21,7 +21,7 @@ const About = () => {
           <hr className={mainStyles.headingLine} />
         </h2>
         <Row className="mt-5">
-          <Col xs="12" md="6">
+          <Col xs="12" lg="6">
             <p>
               A Semana de Informática (SINF), organizada pelo Núcleo de
               Informática da Associação de Estudantes da Faculdade de Engenharia
@@ -49,7 +49,7 @@ const About = () => {
               skills.
             </p>
           </Col>
-          <Col xs="12" md="6">
+          <Col xs="12" lg="6">
             <Row className={AboutStyles.imageContainer}>
               {data.allFile.edges.map((pic, i) => (
                 <Col

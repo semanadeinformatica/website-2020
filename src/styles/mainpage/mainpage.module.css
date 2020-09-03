@@ -24,3 +24,9 @@
   color: var(--white);
   background-color: var(--white);
 }
+
+@media (max-width: 767.98px) {
+  .headingLine {
+    width: 70%;
+  }
+}

@@ -34,7 +34,10 @@ const Banner = () => {
               BannerStyles.carouselFade,
             ].join(" ")}
           >
-            <Img fluid={pic.node.childImageSharp.fluid} />
+            <Img
+              fluid={pic.node.childImageSharp.fluid}
+              className={BannerStyles.carouselImage}
+            />
           </Carousel.Item>
         ))}
       </Carousel>

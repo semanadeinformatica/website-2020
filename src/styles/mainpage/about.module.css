@@ -64,6 +64,7 @@
   border-top: 8px solid var(--white);
   border-left: 8px solid var(--white);
 }
+
 @media screen and (max-width: 575px) {
   .aboutContainer .countdownContainer .number {
     font-size: 30px;
@@ -75,5 +76,11 @@
 
   .aboutContainer .countdownContainer {
     top: 48.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    display: none;
   }
 }

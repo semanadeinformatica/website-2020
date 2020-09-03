@@ -90,11 +90,6 @@
 }
 
 @media (max-width: 600px) {
-  .sponsorsSection {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-  }
-
   .sponsorsType {
     font-size: 1em;
   }

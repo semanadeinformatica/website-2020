@@ -88,4 +88,8 @@ div.location_col {
   div.info_row {
     margin: 0 2em;
   }
+
+  .linkContainer {
+    padding: 0;
+  }
 }
