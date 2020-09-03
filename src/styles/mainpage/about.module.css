@@ -3,6 +3,7 @@
 .aboutContainer {
   background-color: var(--color2);
   color: var(--white);
+  padding: 7rem 0;
 }
 
 .aboutContainer .title {

@@ -14,13 +14,13 @@ const About = () => {
   const flex = ["start", "center", "end"]
 
   return (
-    <div className={AboutStyles.aboutContainer + " py-5"} id="sobre-nos">
+    <div className={AboutStyles.aboutContainer} id="sobre-nos">
       <Container>
         <h2 className={mainStyles.h2}>
           Sobre nós
           <hr className={mainStyles.headingLine} />
         </h2>
-        <Row>
+        <Row className="mt-5">
           <Col xs="12" md="6">
             <p>
               A Semana de Informática (SINF), organizada pelo Núcleo de

@@ -1,8 +1,7 @@
 @import "../common/palette.css";
 
 .speakersSection {
-  padding-top: 13rem;
-  padding-bottom: 8rem;
+  padding: 7rem 0 11rem 0;
   background-color: var(--color3);
 }
 
