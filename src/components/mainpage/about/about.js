@@ -54,6 +54,7 @@ const About = () => {
               {data.allFile.edges.map((pic, i) => (
                 <Col
                   className={`d-flex justify-content-center align-items-${flex[i]}`}
+                  key={pic.node.id}
                 >
                   <Img fixed={pic.node.childImageSharp.fixed} />
                 </Col>

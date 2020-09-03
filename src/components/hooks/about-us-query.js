@@ -6,6 +6,7 @@ export const useAboutUsImages = () => {
       allFile(filter: { relativeDirectory: { eq: "about-us" } }) {
         edges {
           node {
+            id
             absolutePath
             childImageSharp {
               fixed(height: 250) {

@@ -6,6 +6,7 @@ export const useShowcaseImages = () => {
       allFile(filter: { relativeDirectory: { eq: "showcase" } }) {
         edges {
           node {
+            id
             absolutePath
             childImageSharp {
               fluid {

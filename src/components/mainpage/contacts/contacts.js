@@ -1,12 +1,10 @@
 import React from "react"
 import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import {
   FaEnvelope,
   FaLinkedin,
   FaFacebookSquare,
-  FaMapMarkerAlt,
   FaInstagramSquare,
 } from "react-icons/fa"
 
@@ -31,7 +29,7 @@ const links = [
   },
   {
     icon: <FaInstagramSquare />,
-    href: "https://facebook.com/sinfFEUP",
+    href: "https://instagram.com/sinfFEUP",
     text: "sinffeup",
   },
 ]
@@ -43,18 +41,17 @@ const Contacts = () => (
     </h2>
     <Container>
       <div className={ContactStyles.linkContainer}>
-        {links.map((link, index) => {
-          return (
-            <a
-              href={link.href}
-              className={ContactStyles.link}
-              style={{ justifySelf: index % 2 === 0 ? "start" : "end" }}
-            >
-              <span className={ContactStyles.icon}>{link.icon}</span>
-              {link.text}
-            </a>
-          )
-        })}
+        {links.map((link, index) => (
+          <a
+            href={link.href}
+            className={ContactStyles.link}
+            style={{ justifySelf: index % 2 === 0 ? "start" : "end" }}
+            key={link.href}
+          >
+            <span className={ContactStyles.icon}>{link.icon}</span>
+            {link.text}
+          </a>
+        ))}
       </div>
     </Container>
   </Col>

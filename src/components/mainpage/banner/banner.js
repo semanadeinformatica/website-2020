@@ -23,7 +23,7 @@ const Banner = () => {
         controls={false}
         fade={true}
         keyboard={false}
-        pause="false"
+        pause={false}
         touch={false}
         interval={3000}
       >
@@ -33,6 +33,7 @@ const Banner = () => {
               BannerStyles.carouselItem,
               BannerStyles.carouselFade,
             ].join(" ")}
+            key={pic.node.id}
           >
             <Img
               fluid={pic.node.childImageSharp.fluid}

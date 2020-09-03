@@ -153,6 +153,7 @@ class Carousel extends Component {
     return (
       <div
         className={carouselStyles.carouselWrapper}
+        role="presentation"
         onKeyUp={e => this.handleKeyUp(e, items)}
       >
         <div className={previousItemsClass}>

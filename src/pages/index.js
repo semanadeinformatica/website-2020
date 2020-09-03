@@ -2,7 +2,6 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import SEO from "../components/common/seo"
-import Navbar from "../components/common/navbar"
 import Layout from "../components/common/layout"
 
 import Banner from "../components/mainpage/banner/banner"
@@ -11,8 +10,6 @@ import Speakers from "../components/mainpage/speakers/speakers"
 import Tickets from "../components/mainpage/tickets"
 import Sponsors from "../components/mainpage/sponsors/sponsors"
 import Contacts from "../components/mainpage/contacts/wrapper"
-
-import MainpageStyles from "../styles/mainpage/mainpage.module.css"
 
 const IndexPage = () => (
   <div>
