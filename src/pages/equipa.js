@@ -10,7 +10,6 @@ import Team from "../components/team/team"
 import PageBanner from "../components/utils/page_banner"
 
 import TeamStyles from "../styles/team/team.module.css"
-import Icon from "../images/svg/equipa.inline.svg"
 
 const determine_first = (teams, n_per_row) => {
   const odd_row = [true]
@@ -38,7 +37,7 @@ const TeamPage = ({ data }) => {
     <Layout>
       <SEO title="Equipa" />
       <PageBanner>
-        <Icon />
+        <h1 className={TeamStyles.team_page_title}>Equipa</h1>
       </PageBanner>
       <Container className={TeamStyles.container}>
         {teams.map((team, index) => {
@@ -48,7 +47,6 @@ const TeamPage = ({ data }) => {
               members={team.members}
               key={index}
               n_per_row={n_per_row}
-              start_odd={is_starting_row_odd[index]}
             />
           )
         })}
