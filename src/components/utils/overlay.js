@@ -24,15 +24,7 @@ const Overlay = ({
 }) => (
   <div className={OverlayStyles.container}>
     <Img fluid={image} className={OverlayStyles.image} />
-    <div
-      className={
-        OverlayStyles.info_overlay +
-        " " +
-        OverlayStyles.overlay +
-        " " +
-        colors[color]
-      }
-    >
+    <div className={OverlayStyles.link_overlay + " " + OverlayStyles.overlay}>
       <div className={OverlayStyles.links}>
         {linkedin ? (
           <a href={linkedin} className={OverlayStyles.link}>
@@ -63,6 +55,16 @@ const Overlay = ({
           ""
         )}
       </div>
+    </div>
+    <div
+      className={
+        OverlayStyles.info_overlay +
+        " " +
+        OverlayStyles.overlay +
+        " " +
+        colors[color]
+      }
+    >
       {children}
     </div>
 
