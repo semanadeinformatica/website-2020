@@ -1,5 +1,6 @@
 import React from "react"
-import { Row, Col } from "reactstrap"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 import Member from "./member"
 
 import TeamStyles from "../../styles/team/team.module.css"

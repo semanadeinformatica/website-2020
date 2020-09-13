@@ -1,8 +1,9 @@
 @import "../common/palette.css";
 
 .aboutContainer {
-  background-color: var(--color1);
+  background-image: linear-gradient(var(--color2), var(--color3) 90%);
   color: var(--white);
+  padding: 7rem 0 4rem 0;
 }
 
 .aboutContainer .title {
@@ -33,6 +34,37 @@
   text-decoration: underline;
 }
 
+.imageContainer {
+  position: relative;
+  margin-top: -20px;
+  padding: 1rem;
+  height: 400px;
+}
+
+.imageContainer:after {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -5px;
+  right: 10px;
+  border-bottom: 8px solid var(--white);
+  border-right: 8px solid var(--white);
+}
+
+.imageContainer:before {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  border-top: 8px solid var(--white);
+  border-left: 8px solid var(--white);
+}
+
 @media screen and (max-width: 575px) {
   .aboutContainer .countdownContainer .number {
     font-size: 30px;
@@ -44,5 +76,11 @@
 
   .aboutContainer .countdownContainer {
     top: 48.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    display: none;
   }
 }

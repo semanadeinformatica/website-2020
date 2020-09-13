@@ -4,8 +4,9 @@ import SEO from "../components/common/seo"
 import SoonStyles from "../styles/soon.module.css"
 import Brevemente from "../components/brevemente/brevemente"
 import Info from "../components/brevemente/info"
-import { Container, Row, Col } from "reactstrap"
-
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 import Icon from "../images/svg/logo_sinf_comp.inline.svg"
 
 const IndexPage = () => (

@@ -1,5 +1,5 @@
 import React from "react"
-import { Col } from "reactstrap"
+import Col from "react-bootstrap/Col"
 import { Link } from "gatsby"
 
 import Occupations from "./occupations"

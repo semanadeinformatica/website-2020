@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
-import { Container, TabContent, TabPane } from "reactstrap"
+import Tab from "react-bootstrap/Tab"
 
 import Layout from "../components/common/layout"
 import SEO from "../components/common/seo"
@@ -74,23 +74,26 @@ const ProgramPage = ({ data }) => {
       <PageBanner>
         <PageHeader />
       </PageBanner>
-      <Container className={programStyles.container}>
+      <Tab.Container
+        className={programStyles.container}
+        defaultActiveKey={data.allThemesJson.edges[0].node.date.toLowerCase()}
+      >
         <ProgramNav
           days={data.allThemesJson.edges}
           activeTab={activeTab}
           toggle={toggle}
         />
-        <TabContent activeTab={activeTab.date.toLowerCase()}>
+        <Tab.Content>
           {days.map(day => (
-            <TabPane
+            <Tab.Pane
               key={day[0].node.frontmatter.day}
-              tabId={day[0].node.frontmatter.day}
+              eventKey={day[0].node.frontmatter.day}
             >
               <DailySchedule events={day} />
-            </TabPane>
+            </Tab.Pane>
           ))}
-        </TabContent>
-      </Container>
+        </Tab.Content>
+      </Tab.Container>
     </Layout>
   )
 }

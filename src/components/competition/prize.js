@@ -1,5 +1,5 @@
 import React from "react"
-import { Col } from "reactstrap"
+import Col from "react-bootstrap/Col"
 
 import CompetitionStyles from "../../styles/competition/competition.module.css"
 

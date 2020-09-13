@@ -1,5 +1,6 @@
 import React from "react"
 import sponsorsStyles from "../../../styles/mainpage/sponsors.module.css"
+import mainStyles from "../../../styles/mainpage/mainpage.module.css"
 import SponsorSection, { getSponsors } from "../sponsors/sponsor-section"
 import { useSponsors } from "../../hooks/sponsors-query"
 
@@ -16,9 +17,14 @@ const Sponsors = () => {
       silverSponsors.length > 0 ||
       bronzeSponsors.length > 0) && (
       <section id="sponsors" className={sponsorsStyles.sponsorsSection}>
-        <h2 className={sponsorsStyles.h2}>
+        <h2 className={[mainStyles.h2, sponsorsStyles.h2].join(" ")}>
           Sponsors
-          <hr className={sponsorsStyles.headingLine} />
+          <hr
+            className={[
+              mainStyles.headingLine,
+              sponsorsStyles.headingLine,
+            ].join(" ")}
+          />
         </h2>
 
         {mainSponsors.length > 0 && (

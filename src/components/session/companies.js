@@ -1,7 +1,9 @@
 import React from "react"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
-import { Container, Row, Col } from "reactstrap"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 
 import CompaniesStyles from "../../styles/session/companies.module.css"
 import { useStaticQuery } from "gatsby"

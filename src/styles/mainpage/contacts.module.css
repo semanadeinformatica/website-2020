@@ -17,7 +17,7 @@ iframe.map {
 .info_container {
   align-items: center;
   justify-content: center;
-  background-color: var(--color1);
+  background-color: var(--color5);
   color: white;
 }
 
@@ -50,7 +50,6 @@ div.location_col {
 
 .link {
   display: flex;
-  justify-content: center;
   align-items: baseline;
 }
 
@@ -75,6 +74,12 @@ div.location_col {
   font-size: 1.6em;
 }
 
+.linkContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10rem;
+}
+
 @media (max-width: 767.98px) {
   .main_container {
     flex-direction: column;
@@ -82,5 +87,9 @@ div.location_col {
 
   div.info_row {
     margin: 0 2em;
+  }
+
+  .linkContainer {
+    padding: 0;
   }
 }

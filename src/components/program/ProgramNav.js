@@ -1,5 +1,5 @@
 import React from "react"
-import { Nav, NavItem, NavLink } from "reactstrap"
+import Nav from "react-bootstrap/Nav"
 import DayNavItem from "./DayNavItem"
 
 import programStyles from "../../styles/program/program.module.css"
@@ -10,7 +10,7 @@ const ProgramNav = ({ days, activeTab, toggle }) => (
       <Nav className={programStyles.programNav}>
         {days.map((day, i) => {
           return (
-            <NavItem
+            <Nav.Item
               key={day.node.id}
               className={
                 activeTab.date === day.node.date
@@ -20,15 +20,18 @@ const ProgramNav = ({ days, activeTab, toggle }) => (
                   : programStyles.navItemWrapper
               }
             >
-              <NavLink onClick={() => toggle(day.node)}>
+              <Nav.Link
+                onClick={() => toggle(day.node)}
+                eventKey={day.node.date.toLowerCase()}
+              >
                 <DayNavItem
                   date={day.node.date}
                   icon={day.node.icon}
                   day={i + 1}
                   active={activeTab.date === day.node.date}
                 />
-              </NavLink>
-            </NavItem>
+              </Nav.Link>
+            </Nav.Item>
           )
         })}
       </Nav>

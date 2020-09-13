@@ -32,7 +32,7 @@ It also makes available GraphiQL, an in-browser IDE, to explore the site's data 
 
 ## Project Details
 
-This project uses [`Gatsby.js`](https://gatsbyjs.org/). The visual framework used is [`Reactstrap`](https://reactstrap.github.io/).
+This project uses [`Gatsby.js`](https://gatsbyjs.org/). The visual framework used is [`React-Bootstrap`](https://react-bootstrap.github.io/).
 
 ### Project Structure
 

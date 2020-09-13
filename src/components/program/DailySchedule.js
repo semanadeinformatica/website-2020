@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { TabContent, TabPane } from "reactstrap"
+import Tab from "react-bootstrap/Tab"
 
 import SimpleEvent from "./SimpleEvent"
 import CommonEvent from "./CommonEvent"
@@ -15,10 +15,10 @@ const DailySchedule = ({ events }) => {
   }
 
   return (
-    <>
+    <Tab.Container defaultActiveKey="talks">
       <EventsNav toggle={toggle} activeTab={activeTab} />
-      <TabContent activeTab={activeTab}>
-        <TabPane tabId="talks">
+      <Tab.Content>
+        <Tab.Pane eventKey="talks">
           <div className={programStyles.schedule}>
             {events
               .filter(
@@ -41,8 +41,8 @@ const DailySchedule = ({ events }) => {
                 )
               )}
           </div>
-        </TabPane>
-        <TabPane tabId="activities">
+        </Tab.Pane>
+        <Tab.Pane eventKey="activities">
           <div className={programStyles.schedule}>
             {events
               .filter(event => !event.node.fileAbsolutePath.includes("talks"))
@@ -86,9 +86,9 @@ const DailySchedule = ({ events }) => {
                 return toRender
               })}
           </div>
-        </TabPane>
-      </TabContent>
-    </>
+        </Tab.Pane>
+      </Tab.Content>
+    </Tab.Container>
   )
 }
 

@@ -1,6 +1,8 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Container, Col, Row } from "reactstrap"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
 
 import WebIcon from "../../images/svg/web_icon.inline.svg"

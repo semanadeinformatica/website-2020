@@ -1,5 +1,6 @@
 import React from "react"
-import { Row, Col } from "reactstrap"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 
 import SingleSpeaker from "./single-speaker"
 
@@ -10,13 +11,13 @@ const getSpeakers = talks => {
   const speakers = []
 
   talks
-    .filter( ({ node }) => node.frontmatter.type !== "Placeholder" )
+    .filter(({ node }) => node.frontmatter.type !== "Placeholder")
     .forEach(({ node }) => {
       node.frontmatter.speakers.forEach(speaker => {
         speaker.path = node.frontmatter.path
         speakers.push(speaker)
       })
-  })
+    })
 
   return speakers
 }
@@ -44,7 +45,11 @@ const DailySpeakers = ({ talks, day }) => {
             index % 8 < 4 ? (
               <SingleSpeaker key={index} speaker={speaker} color={index % 4} />
             ) : (
-              <SingleSpeaker key={index} speaker={speaker} color={3 - (index % 4)} />
+              <SingleSpeaker
+                key={index}
+                speaker={speaker}
+                color={3 - (index % 4)}
+              />
             )
           )}
         </Row>

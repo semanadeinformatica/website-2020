@@ -1,23 +1,8 @@
 @import "../common/palette.css";
 
 .speakersSection {
-  margin-top: 13rem;
-  margin-bottom: 8rem;
-}
-
-.h2 {
-  text-align: center;
-  font-weight: bold;
-  color: var(--color1);
-  margin-bottom: 5rem;
-}
-
-.headingLine {
-  width: 3.5rem;
-  height: 2px;
-  margin: 0.2rem auto;
-  color: var(--color1);
-  background-color: var(--color1);
+  padding: 4rem 0 11rem 0;
+  background-image: linear-gradient(var(--color3), 90%, var(--color5) 100%);
 }
 
 .allLink {
@@ -49,7 +34,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color1);
+  background-color: var(--color5);
   z-index: 1;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
@@ -63,7 +48,7 @@
   z-index: 2;
   opacity: 0;
   color: white;
-  font-weight: bold;
+  font-size: 2rem;
   text-decoration: underline;
   transition: opacity 0.4s ease-in-out;
 }
@@ -82,11 +67,6 @@
 }
 
 @media (max-width: 500px) {
-  .speakersSection {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-  }
-
   .speaker {
     position: static;
   }

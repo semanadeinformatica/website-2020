@@ -1,26 +1,28 @@
 import React from "react"
-import { Nav, NavItem, NavLink } from "reactstrap"
+import Nav from "react-bootstrap/Nav"
 
 import programStyles from "../../styles/program/program.module.css"
 
 const EventsNav = ({ toggle, activeTab }) => (
   <Nav className="justify-content-center">
-    <NavItem>
-      <NavLink
+    <Nav.Item>
+      <Nav.Link
         onClick={() => toggle("talks")}
         className={
           activeTab === "talks"
             ? [programStyles.innerTab, programStyles.active].join(" ")
             : programStyles.innerTab
         }
+        eventKey="talks"
       >
         Palestras
         {activeTab === "talks" && <hr className={programStyles.headingLine} />}
-      </NavLink>
-    </NavItem>
-    <NavItem>
-      <NavLink
+      </Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link
         onClick={() => toggle("activities")}
+        eventKey="activities"
         className={
           activeTab === "activities"
             ? [programStyles.innerTab, programStyles.active].join(" ")
@@ -31,8 +33,8 @@ const EventsNav = ({ toggle, activeTab }) => (
         {activeTab === "activities" && (
           <hr className={programStyles.headingLine} />
         )}
-      </NavLink>
-    </NavItem>
+      </Nav.Link>
+    </Nav.Item>
   </Nav>
 )
 

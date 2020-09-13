@@ -16,31 +16,22 @@ export const getSponsors = (data, type) => {
 }
 
 const SponsorSection = ({ sponsorData, type }) => {
-  let wrapperType, sponsorText, sponsorType, numDesktop
+  let wrapperType, numDesktop
 
   if (type === "gold") {
     wrapperType = sponsorsStyles.goldWrapper
-    sponsorText = sponsorsStyles.goldSponsor
-    sponsorType = "Gold"
     numDesktop = sponsorData.length < 2 ? sponsorData.length : 2
   } else if (type === "silver") {
     wrapperType = sponsorsStyles.silverWrapper
-    sponsorText = sponsorsStyles.silverSponsor
-    sponsorType = "Silver"
     numDesktop = sponsorData.length < 3 ? sponsorData.length : 3
   } else {
     wrapperType = sponsorsStyles.bronzeWrapper
-    sponsorText = sponsorsStyles.bronzeSponsor
-    sponsorType = "Bronze"
     numDesktop = sponsorData.length < 5 ? sponsorData.length : 5
   }
 
   return (
     numDesktop > 0 && (
       <div className={[sponsorsStyles.otherSponsors, wrapperType].join(" ")}>
-        <div className={[sponsorsStyles.sponsorsType, sponsorText].join(" ")}>
-          {sponsorType}
-        </div>
         <Carousel
           numMobileItems={1}
           numTabletItems={1}

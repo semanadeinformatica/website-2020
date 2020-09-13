@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Semana de informática`,
-    description: `A Semana de Informática é uma conferência a decorrer nos dias 28 a 30 de outubro na Faculdade de Engenharia da Universidade do Porto. Entre workshops e competições, palestras e networking, serão 3 dias com atividades variadas que procuram aproximar o mundo empresarial com os futuros profissionais.`,
+    description: `A Semana de Informática é uma conferência remota a decorrer nos dias 9 a 11 de Novembro, com sede na Faculdade de Engenharia da Universidade do Porto.`,
     author: `NIAEFEUP, https://niaefeup.pt`,
   },
   plugins: [

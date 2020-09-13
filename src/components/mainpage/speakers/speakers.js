@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import speakersStyles from "../../../styles/mainpage/speakers.module.css"
+import mainStyles from "../../../styles/mainpage/mainpage.module.css"
 import Carousel from "../../utils/carousel"
 import SingleSpeaker from "./SingleSpeaker"
 
@@ -53,9 +54,9 @@ const Speakers = () => {
   return (
     speakers.length > 0 && (
       <section id="speakers" className={speakersStyles.speakersSection}>
-        <h2 className={speakersStyles.h2}>
+        <h2 className={mainStyles.h2}>
           Speakers
-          <hr className={speakersStyles.headingLine} />
+          <hr className={mainStyles.headingLine} />
         </h2>
         <Carousel numMobileItems={1} numTabletItems={2} numDesktopItems={4}>
           {speakers.map(speaker => (
