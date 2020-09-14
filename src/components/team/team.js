@@ -26,27 +26,26 @@ const Team = ({ name, members, n_per_row }) => {
   return (
     <div className={TeamStyles.team_container}>
       <div className={TeamStyles.team_title_container}>
-        <h2>{name}</h2>
+        <h2 className={TeamStyles.team_title}>{name}</h2>
+        <svg width="140" height="3">
+          <rect width="140" height="3" style={{ fill: "#350052" }} />
+        </svg>
       </div>
       <div className={TeamStyles.members_container}>
         {member_rows.map((row_members, row_index) => {
           odd ^= true
 
-          return (
-            <div className={TeamStyles.members_row} key={"row" + row_index}>
-              {row_members.map((value, index) => {
-                const color = !odd ? n_per_row - index - 1 : index
-                return (
-                  <div
-                    key={"member" + index}
-                    className={TeamStyles.member_container}
-                  >
-                    <Member data={value} color={color} />
-                  </div>
-                )
-              })}
-            </div>
-          )
+          return row_members.map((value, index) => {
+            const color = !odd ? n_per_row - index - 1 : index
+            return (
+              <div
+                key={"member" + index}
+                className={TeamStyles.member_container}
+              >
+                <Member data={value} color={color} />
+              </div>
+            )
+          })
         })}
       </div>
     </div>

@@ -26,8 +26,16 @@ div.team_title_container {
   font-weight: 500;
 }
 
+h2.team_title {
+  display: block;
+}
+
 div.members_container {
   margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+
+  justify-content: start;
 }
 
 div.members_row {
@@ -53,19 +61,19 @@ div.name_container h2 {
 }
 
 @media (max-width: 900px) {
-  div.members_row {
+  div.members_container {
     grid-template-columns: repeat(3, auto);
   }
 }
 
 @media (max-width: 700px) {
-  div.members_row {
+  div.members_container {
     grid-template-columns: repeat(2, auto);
   }
 }
 
 @media (max-width: 460px) {
-  div.members_row {
+  div.members_container {
     grid-template-columns: repeat(1, auto);
   }
 }
