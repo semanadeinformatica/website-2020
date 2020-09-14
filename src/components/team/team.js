@@ -32,7 +32,7 @@ const Team = ({ name, members, n_per_row }) => {
         </svg>
       </div>
       <div className={TeamStyles.members_container}>
-        {member_rows.map((row_members, row_index) => {
+        {member_rows.map(row_members => {
           odd ^= true
 
           return row_members.map((value, index) => {
