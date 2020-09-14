@@ -1,9 +1,9 @@
 @import "./palette.css";
 
 .footerContainer {
-  background-color: var(--white);
-  color: var(--color5);
-  font-size: 12px;
+  background-color: var(--color5);
+  color: var(--white);
+  font-size: 14px;
 }
 
 @media screen and (max-width: 576px) {
