@@ -59,19 +59,19 @@ div.name_container h2 {
   text-align: right;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1090px) {
   div.members_container {
     grid-template-columns: repeat(3, auto);
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 830px) {
   div.members_container {
     grid-template-columns: repeat(2, auto);
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 550px) {
   div.members_container {
     grid-template-columns: repeat(1, auto);
   }
