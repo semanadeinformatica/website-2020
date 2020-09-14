@@ -36,7 +36,7 @@ const DailySchedule = ({ events }) => {
                   <CommonEvent
                     key={event.node.id}
                     event={event.node}
-                    color="#2da6b0"
+                    color="#ff711f"
                   />
                 )
               )}
@@ -62,7 +62,7 @@ const DailySchedule = ({ events }) => {
                     <CommonEvent
                       key={event.node.frontmatter.start_time}
                       event={event.node}
-                      color="#0c0044"
+                      color="#350052"
                     />
                   )
                 } else if (path.includes("workshops")) {
@@ -70,7 +70,7 @@ const DailySchedule = ({ events }) => {
                     <CommonEvent
                       key={event.node.frontmatter.start_time}
                       event={event.node}
-                      color="#2da6b0"
+                      color="#ff711f"
                     />
                   )
                 } else {

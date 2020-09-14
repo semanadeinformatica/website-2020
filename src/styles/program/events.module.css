@@ -3,7 +3,6 @@
 
 .main {
   border-bottom: 1px #ccc solid;
-  padding-bottom: 1rem;
   margin-top: 1rem;
   position: relative;
   margin-right: 30%;
@@ -29,7 +28,7 @@
 .simpleEvent:after {
   position: absolute;
   content: "";
-  background-color: var(--color4);
+  background-color: var(--color3);
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 5px;
@@ -40,6 +39,7 @@
 .main:before {
   position: absolute;
   content: attr(data-date);
+  color: var(--color2);
   bottom: 50%;
   left: -8rem;
 }
@@ -64,12 +64,12 @@
 .simpleEvent:before {
   position: absolute;
   content: attr(data-date);
+  color: var(--color3);
   top: unset;
   left: -8rem;
 }
 
 .commonEvent {
-  padding-bottom: 1.5rem;
   margin-top: 1.5rem;
   position: relative;
 }
@@ -98,7 +98,7 @@
 
 .speakers a {
   font-size: 1.3rem;
-  color: black;
+  color: var(--color5);
   text-decoration: underline;
 }
 
@@ -120,7 +120,7 @@
 
 .timePlace {
   font-size: 0.9rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .info h4 {
@@ -146,20 +146,7 @@
   left: -3.7rem;
 }
 
-.toggler svg {
-  transition: 0.5s ease-in-out;
-}
-
-.toggler label:hover svg {
-  transform: rotateZ(-180deg);
-}
-
-.toggler input:checked + label svg {
-  transform: rotateZ(-180deg);
-}
-
 .description {
-  padding-top: 1rem;
   font-size: 0.95rem;
 }
 
@@ -186,10 +173,6 @@
 }
 
 @media (max-width: 768px) {
-  .toggler label:hover svg {
-    transform: none;
-  }
-
   .simpleEvent:first-child:after {
     bottom: 40%;
   }
