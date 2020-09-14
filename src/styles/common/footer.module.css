@@ -6,6 +6,11 @@
   font-size: 12px;
 }
 
+.footerContainer.dark {
+  background-color: var(--color5);
+  color: var(--white);
+}
+
 @media screen and (max-width: 576px) {
   .footerContainer {
     font-size: 10px;

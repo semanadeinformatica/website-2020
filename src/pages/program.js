@@ -9,7 +9,6 @@ import ProgramNav from "../components/program/ProgramNav"
 import DailySchedule from "../components/program/DailySchedule"
 import PageBanner from "../components/utils/page_banner"
 
-import PageHeader from "../images/svg/programa.inline.svg"
 import programStyles from "../styles/program/program.module.css"
 
 import { splitDays } from "../utils/programUtils"
@@ -69,31 +68,30 @@ const ProgramPage = ({ data }) => {
   console.log(activeTab)
 
   return (
-    <Layout>
-      <SEO title="Program" />
-      <PageBanner>
-        <PageHeader />
-      </PageBanner>
-      <Tab.Container
-        className={programStyles.container}
-        defaultActiveKey={data.allThemesJson.edges[0].node.date.toLowerCase()}
-      >
-        <ProgramNav
-          days={data.allThemesJson.edges}
-          activeTab={activeTab}
-          toggle={toggle}
-        />
-        <Tab.Content>
-          {days.map(day => (
-            <Tab.Pane
-              key={day[0].node.frontmatter.day}
-              eventKey={day[0].node.frontmatter.day}
-            >
-              <DailySchedule events={day} />
-            </Tab.Pane>
-          ))}
-        </Tab.Content>
-      </Tab.Container>
+    <Layout darkFooter={true}>
+      <SEO title="Programa" />
+      <PageBanner title="Programa" />
+      <div className={programStyles.container}>
+        <Tab.Container
+          defaultActiveKey={data.allThemesJson.edges[0].node.date.toLowerCase()}
+        >
+          <ProgramNav
+            days={data.allThemesJson.edges}
+            activeTab={activeTab}
+            toggle={toggle}
+          />
+          <Tab.Content>
+            {days.map(day => (
+              <Tab.Pane
+                key={day[0].node.frontmatter.day}
+                eventKey={day[0].node.frontmatter.day}
+              >
+                <DailySchedule events={day} />
+              </Tab.Pane>
+            ))}
+          </Tab.Content>
+        </Tab.Container>
+      </div>
     </Layout>
   )
 }
