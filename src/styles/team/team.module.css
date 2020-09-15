@@ -27,17 +27,12 @@ div.team_title_container {
 
 h2.team_title {
   display: block;
+
+  text-align: center;
 }
 
 div.members_container {
   margin-top: 1.5em;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-
-  justify-content: start;
-}
-
-div.members_row {
   display: grid;
   grid-template-columns: repeat(4, auto);
 
