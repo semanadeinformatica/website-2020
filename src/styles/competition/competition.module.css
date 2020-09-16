@@ -67,14 +67,14 @@
   font-size: 2em;
   font-weight: 500;
   margin-top: 15px;
-  margin-left: 15px;
+  margin-bottom: 15px;
   color: white;
 
   text-align: center;
 }
 
 .horizontalRuler {
-  width: 75px;
+  width: 150px;
   margin: 0 auto;
   border: 2px solid white;
 }
