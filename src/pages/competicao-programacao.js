@@ -6,13 +6,11 @@ import Layout from "../components/common/layout"
 import Competition from "../components/competition/competition"
 import PageBanner from "../components/utils/page_banner"
 
-import Icon from "../images/svg/competicao.inline.svg"
-
 const CompetitionPage = () => (
   <Layout>
     <SEO title="Competição de programação" />
     <PageBanner>
-      <Icon />
+      <h1>Competição de Programação</h1>
     </PageBanner>
     <Competition />
   </Layout>
