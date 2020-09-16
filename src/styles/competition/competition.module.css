@@ -59,6 +59,10 @@
   letter-spacing: 0.5px;
 }
 
+.conditions_container {
+  margin-top: -140px;
+}
+
 .conditionsText {
   font-size: 2em;
   font-weight: 500;
@@ -95,6 +99,14 @@
     height: 240px;
     width: 240px;
   }
+
+  .prizeSquares {
+    bottom: 120px;
+  }
+
+  .conditions_container {
+    margin-top: -120px;
+  }
 }
 
 @media (max-width: 1160px) {
@@ -102,12 +114,28 @@
     height: 210px;
     width: 210px;
   }
+
+  .prizeSquares {
+    bottom: 105px;
+  }
+
+  .conditions_container {
+    margin-top: -105px;
+  }
 }
 
 @media (max-width: 990px) {
   .squarePrize {
     height: 180px;
     width: 180px;
+  }
+
+  .prizeSquares {
+    bottom: 95px;
+  }
+
+  .conditions_container {
+    margin-top: -95px;
   }
 
   .prizeType {
@@ -141,6 +169,11 @@
   }
 
   .prizeSquares {
+    bottom: 120px;
+  }
+
+  .conditions_container {
+    margin-top: -120px;
   }
 
   .prizeType {

@@ -47,7 +47,7 @@ const Competition = () => (
           />
           <Prize type="third" title="Cartão oferta Fnac 100€" description="" />
         </Row>
-        <div className="pt-4">
+        <div className={CompetitionStyles.conditions_container + " pt-4"}>
           <Row>
             <Col className={CompetitionStyles.conditionsText}>
               Regulamento
