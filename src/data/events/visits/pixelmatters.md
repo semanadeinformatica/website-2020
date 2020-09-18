@@ -5,7 +5,7 @@ day: 2019-10-30
 start_time: 10h30
 end_time: 12h15
 path: /visits/pixelmatters/
-type: Visita
+type: visit
 registration: "https://www.eventbrite.com/e/visita-a-pixelmatters-tickets-75828895267"
 ---
 

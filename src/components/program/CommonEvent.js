@@ -20,7 +20,11 @@ const CommonEvent = ({ color, event }) => {
   ) : (
     <div
       data-date={start_time}
-      className={[eventsStyles.commonEvent, eventsStyles.main].join(" ")}
+      className={[
+        eventsStyles.commonEvent,
+        eventsStyles.main,
+        eventsStyles[type],
+      ].join(" ")}
     >
       <DescriptionToggler
         id={`toggleShowAll-${title}`}

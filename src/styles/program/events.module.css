@@ -44,6 +44,14 @@
   left: -8rem;
 }
 
+.visit:before {
+  color: black !important;
+}
+
+.session:before {
+  color: var(--color5);
+}
+
 .simpleEvent:first-child:before {
   bottom: 40%;
 }
@@ -106,6 +114,7 @@
   font-weight: 300;
   font-size: 1.2rem;
   margin-bottom: 0;
+  color: var(--color5);
 }
 
 .withIcon {
@@ -121,11 +130,13 @@
 .timePlace {
   font-size: 0.9rem;
   margin-bottom: 1rem;
+  color: var(--color5);
 }
 
 .info h4 {
   font-size: 1.3rem;
   margin-bottom: 0;
+  color: var(--color5);
 }
 
 .toggler input {
