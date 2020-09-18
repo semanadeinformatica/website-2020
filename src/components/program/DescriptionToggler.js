@@ -12,11 +12,18 @@ const DescriptionToggler = ({ id, showAll, setShowAll, backgroundColor }) => (
       id={id}
     />
     <label htmlFor={id} style={{ backgroundColor }}>
-      {showAll ? (
-        <FaTimes color="white" size="1.5rem" />
-      ) : (
-        <FaInfo color="white" size="1.5rem" />
-      )}
+      <div className={eventsStyles.icons}>
+        <FaTimes
+          color="white"
+          size="1.5rem"
+          className={eventsStyles.descriptionOpen}
+        />
+        <FaInfo
+          color="white"
+          size="1.5rem"
+          className={eventsStyles.descriptionClosed}
+        />
+      </div>
     </label>
   </div>
 )
