@@ -70,7 +70,9 @@ const ProgramPage = ({ data }) => {
   return (
     <Layout darkFooter={true}>
       <SEO title="Programa" />
-      <PageBanner title="Programa" />
+      <PageBanner>
+        <h1 className={programStyles.pageTitle}>Programa</h1>
+      </PageBanner>
       <div className={programStyles.container}>
         <Tab.Container
           defaultActiveKey={data.allThemesJson.edges[0].node.date.toLowerCase()}

@@ -18,17 +18,17 @@ const Layout = ({ children, darkFooter }) => (
       <Navbar logo />
     </div>
     <main>{children}</main>
-    <Footer dark={darkFooter} />
+    <Footer darkMode={darkFooter} />
   </>
 )
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  dark: PropTypes.bool,
+  darkFooter: PropTypes.bool,
 }
 
 Layout.defaultProps = {
-  dark: false,
+  darkFooter: false,
 }
 
 export default Layout

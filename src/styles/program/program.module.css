@@ -3,6 +3,10 @@
   overflow-x: hidden;
 }
 
+.pageTitle {
+  font-weight: 600;
+}
+
 .schedule {
   border-left: 1px #ccc solid;
   padding-left: 2.5rem;
