@@ -1,10 +1,7 @@
 import React from "react"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
 import Member from "./member"
 
 import TeamStyles from "../../styles/team/team.module.css"
-import ParticipantsStyle from "../../styles/utils/participants-display.module.css"
 
 const divide_rows = (members, n_per_row) => {
   const member_rows = []
@@ -22,40 +19,36 @@ const divide_rows = (members, n_per_row) => {
   return member_rows
 }
 
-const Team = ({ name, members, n_per_row, start_odd }) => {
+const Team = ({ name, members, n_per_row }) => {
   const member_rows = divide_rows(members, n_per_row)
-  let odd = start_odd
+  let odd = false
 
   return (
-    <Row className={TeamStyles.team_container}>
-      <Col className={TeamStyles.name_container}>
-        <h2>{name}</h2>
-      </Col>
-      <Col className={TeamStyles.members_container}>
-        {member_rows.map((row_members, row_index) => {
+    <div className={TeamStyles.team_container}>
+      <div className={TeamStyles.team_title_container}>
+        <h2 className={TeamStyles.team_title}>{name}</h2>
+        <svg width="140" height="3">
+          <rect width="140" height="3" style={{ fill: "#350052" }} />
+        </svg>
+      </div>
+      <div className={TeamStyles.members_container}>
+        {member_rows.map(row_members => {
           odd ^= true
 
-          return (
-            <Row
-              className={ParticipantsStyle.member_row}
-              key={"row" + row_index}
-            >
-              {row_members.map((value, index) => {
-                const color = !odd ? n_per_row - index - 1 : index
-                return (
-                  <Col
-                    key={"member" + index}
-                    className={ParticipantsStyle.member_container}
-                  >
-                    <Member data={value} color={color} />
-                  </Col>
-                )
-              })}
-            </Row>
-          )
+          return row_members.map((value, index) => {
+            const color = !odd ? n_per_row - index - 1 : index
+            return (
+              <div
+                key={"member" + index}
+                className={TeamStyles.member_container}
+              >
+                <Member data={value} color={color} />
+              </div>
+            )
+          })
         })}
-      </Col>
-    </Row>
+      </div>
+    </div>
   )
 }
 

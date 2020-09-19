@@ -12,13 +12,13 @@ import Footer from "./footer"
 
 import Utils from "../../styles/utils/utils.module.css"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, darkFooter }) => (
   <>
     <div className={Utils.sticky}>
       <Navbar logo />
     </div>
     <main>{children}</main>
-    <Footer />
+    <Footer darkMode={darkFooter} />
   </>
 )
 
