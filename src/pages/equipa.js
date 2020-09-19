@@ -11,30 +11,12 @@ import PageBanner from "../components/utils/page_banner"
 
 import TeamStyles from "../styles/team/team.module.css"
 
-const determine_first = (teams, n_per_row) => {
-  const odd_row = [true]
-  let rows = 0
-  for (const team of teams) {
-    const element = team.members
-    rows += Math.ceil(element.length / n_per_row)
-
-    if (rows % 2 === 0) {
-      odd_row.push(true)
-    } else {
-      odd_row.push(false)
-    }
-  }
-
-  return odd_row
-}
-
 const TeamPage = ({ data }) => {
   const teams = data.allTeamJson.nodes
   const n_per_row = 4
-  const is_starting_row_odd = determine_first(teams, n_per_row)
 
   return (
-    <Layout>
+    <Layout darkFooter>
       <SEO title="Equipa" />
       <PageBanner>
         <h1 className={TeamStyles.team_page_title}>Equipa</h1>
