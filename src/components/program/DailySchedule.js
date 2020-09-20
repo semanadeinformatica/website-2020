@@ -36,7 +36,7 @@ const DailySchedule = ({ events }) => {
                   <CommonEvent
                     key={event.node.id}
                     event={event.node}
-                    color="#2da6b0"
+                    color="#ff711f"
                   />
                 )
               )}
@@ -57,20 +57,15 @@ const DailySchedule = ({ events }) => {
                       event={event.node.frontmatter}
                     />
                   )
-                } else if (path.includes("sessions")) {
+                } else if (
+                  path.includes("sessions") ||
+                  path.includes("workshops")
+                ) {
                   toRender = (
                     <CommonEvent
                       key={event.node.frontmatter.start_time}
                       event={event.node}
-                      color="#0c0044"
-                    />
-                  )
-                } else if (path.includes("workshops")) {
-                  toRender = (
-                    <CommonEvent
-                      key={event.node.frontmatter.start_time}
-                      event={event.node}
-                      color="#2da6b0"
+                      color="#FF711F"
                     />
                   )
                 } else {
@@ -78,7 +73,7 @@ const DailySchedule = ({ events }) => {
                     <CommonEvent
                       key={event.node.frontmatter.start_time}
                       event={event.node}
-                      color="#000000"
+                      color="#FF341F"
                     />
                   )
                 }

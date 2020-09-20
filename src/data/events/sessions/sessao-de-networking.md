@@ -4,9 +4,9 @@ img: ../../../images/svg/networking.svg
 day: 2019-10-29
 start_time: 18h15
 end_time: 19h15
-place:  B120
+place: B120
 path: /sessions/sessao-de-networking
-type: 1-session
+type: session
 registration: "https://www.eventbrite.com/e/sessao-de-networking-tickets-75774592847"
 companies:
   - accenture

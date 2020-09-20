@@ -24,6 +24,11 @@ const Layout = ({ children, darkFooter }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  darkFooter: PropTypes.bool,
+}
+
+Layout.defaultProps = {
+  darkFooter: false,
 }
 
 export default Layout
