@@ -45,12 +45,12 @@
 }
 
 .visit:before {
-  color: black !important;
+  color: var(--color1) !important;
 }
 
-.session:before {
+/* .session:before {
   color: var(--color5);
-}
+} */
 
 .simpleEvent:first-child:before {
   bottom: 40%;
