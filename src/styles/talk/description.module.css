@@ -11,6 +11,7 @@
 .title {
   text-decoration: underline;
   margin-bottom: 0.5em;
+  color: var(--color5);
 }
 
 .info_container {
@@ -19,7 +20,7 @@
 
 .date {
   text-align: right;
-  color: var(--color1);
+  color: var(--color5);
 }
 
 .date > div {

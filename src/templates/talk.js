@@ -16,7 +16,7 @@ export default function Template({ data }) {
   const info = { ...talk.frontmatter }
 
   return (
-    <Layout>
+    <Layout darkFooter>
       <SEO title={info.title} />
       <Container fluid className={TalkStyles.container}>
         <Speaker data={info.speakers[0]} />
