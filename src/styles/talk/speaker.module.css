@@ -66,9 +66,9 @@ div.frame {
     background: linear-gradient(
       to bottom,
       var(--color1) 0%,
-      var(--color2) 30%,
-      var(--color3) 50%,
-      var(--white) 50%
+      var(--color2) 10rem,
+      var(--color3) 17rem,
+      var(--white) 17rem
     );
   }
 

@@ -28,6 +28,10 @@
 }
 
 .date > :nth-child(2) {
+  color: var(--color2);
+}
+
+.date > :nth-child(3) {
   font-weight: bold;
 }
 

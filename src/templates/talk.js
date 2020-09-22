@@ -48,6 +48,7 @@ export const talkQuery = graphql`
         start_time
         end_time
         registration
+        link
         speakers {
           name
           bio
