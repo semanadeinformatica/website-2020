@@ -13,9 +13,6 @@ const Participate = ({ link }) => {
       <Container>
         <Row>
           <Col xs="12" className={ParticipateStyles.colContent}>
-            <div className={ParticipateStyles.participateText}>
-              Não percas mais tempo!
-            </div>
             <Button
               href={link}
               outline

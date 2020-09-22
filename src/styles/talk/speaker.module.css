@@ -7,7 +7,13 @@ div.container {
 .id_container {
   display: none;
   align-items: flex-end;
-  background: linear-gradient(to bottom, var(--color1) 19em, white 12.5em);
+  background: linear-gradient(
+    to bottom,
+    var(--color1) 0%,
+    var(--color2) 30%,
+    var(--color3) 50%,
+    var(--white) 50%
+  );
   padding-top: 5em;
   margin-bottom: 5em;
 }
@@ -35,6 +41,12 @@ div.frame {
   flex-direction: column;
   align-items: center;
   background-color: var(--color1);
+  background: linear-gradient(
+    to bottom,
+    var(--color1) 0%,
+    var(--color2) 60%,
+    var(--color3) 80%
+  );
 }
 
 @media (min-width: 991px) {
@@ -51,7 +63,13 @@ div.frame {
   }
 
   div.id_container {
-    background: linear-gradient(to bottom, var(--color1) 16.5em, white 12.5em);
+    background: linear-gradient(
+      to bottom,
+      var(--color1) 0%,
+      var(--color2) 10rem,
+      var(--color3) 17rem,
+      var(--white) 17rem
+    );
   }
 
   div.id_wrapper {

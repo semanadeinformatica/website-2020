@@ -17,6 +17,7 @@ start_time: 15h30
 end_time: 16h00
 place: B032
 type: Palestra
+link: https://twitter.com/beatrizoliveira
 
 path: /talks/the-lean-startup
 ---

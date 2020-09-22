@@ -2,14 +2,14 @@ import React from "react"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import TimePlace from "./time_place"
+import Link from "./link"
 
 import DescriptionStyles from "../../styles/talk/description.module.css"
 
 const calculateDay = date => {
   const oneDay = 24 * 60 * 60 * 1000
-  let first_day = new Date(2019, 10, 28)
-  let day = new Date(2019, 10, date.replace(/(^\d+)(.+$)/i, "$1"))
+  let first_day = new Date(2020, 11, 9)
+  let day = new Date(2020, 11, date.replace(/(^\d+)(.+$)/i, "$1"))
   return Math.round(Math.abs((day - first_day.getTime()) / oneDay)) + 1
 }
 
@@ -24,11 +24,12 @@ const Description = ({ data, children }) => {
           <Row className={DescriptionStyles.info_container}>
             <Col className={DescriptionStyles.date}>
               <div>Dia {calculateDay(data.day)}</div>
+              <div>{data.start_time}</div>
               <div>{data.day}</div>
             </Col>
             <Col>
               {children}
-              <TimePlace time={data.start_time} place={data.place} />
+              {data.type === "Palestra" && <Link link={data.link} />}
             </Col>
           </Row>
         </Container>
