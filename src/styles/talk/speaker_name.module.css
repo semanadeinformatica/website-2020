@@ -23,6 +23,7 @@
   font-weight: 600;
   font-size: 2em;
   text-align: center;
+  white-space: nowrap;
 }
 
 .occupation {

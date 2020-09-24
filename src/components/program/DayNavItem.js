@@ -6,9 +6,7 @@ import programStyles from "../../styles/program/program.module.css"
 
 const DayNavItem = ({ icon, date, day, active }) => (
   <div className={programStyles.navItem}>
-    <IconContext.Provider
-      value={{ color: active ? "#FFFFFF" : "#9BD8DC", size: "2em" }}
-    >
+    <IconContext.Provider value={{ color: "#350052", size: "2em" }}>
       <div>{icons[icon]}</div>
     </IconContext.Provider>
     <div className={programStyles.navItemText}>

@@ -13,12 +13,12 @@
 
 .link {
   font-size: 2.5em;
-  color: var(--color4);
+  color: var(--color5);
   margin-right: 5px;
 }
 
 .link:hover {
-  color: var(--color4);
+  color: var(--color5);
   text-decoration: none;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .link svg path {
-  fill: var(--color4);
+  fill: var(--color5);
 }
 
 @media (max-width: 991px) {

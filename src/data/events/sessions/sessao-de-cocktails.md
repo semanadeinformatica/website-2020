@@ -6,7 +6,7 @@ start_time: 18h15
 end_time: 20h15
 place: I-105
 path: /sessions/sessao-de-cocktails
-type: 1-session
+type: session
 registration: "https://www.eventbrite.com/e/sessao-de-cocktails-tickets-75773401283"
 companies:
   - accenture

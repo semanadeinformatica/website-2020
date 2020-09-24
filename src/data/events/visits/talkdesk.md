@@ -5,7 +5,7 @@ day: 2019-10-29
 start_time: 09h30
 end_time: 11h30
 path: /visits/talkdesk/
-type: Visita
+type: visit
 registration: "https://www.eventbrite.com/e/visita-a-talkdesk-tickets-75830586325"
 ---
 

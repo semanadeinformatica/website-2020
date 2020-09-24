@@ -36,9 +36,7 @@ const ProgramNav = ({ days, activeTab, toggle }) => (
         })}
       </Nav>
       <div className={programStyles.themeHeader}>
-        <h3 className={programStyles.themeHeading}>
-          <span className={programStyles.theme}>Tema:</span> {activeTab.theme}
-        </h3>
+        <h3 className={programStyles.themeHeading}>{activeTab.theme}</h3>
       </div>
     </div>
   </div>

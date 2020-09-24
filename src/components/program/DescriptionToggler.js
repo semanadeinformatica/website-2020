@@ -1,5 +1,5 @@
 import React from "react"
-import { FaAngleUp } from "react-icons/fa"
+import { FaInfo, FaTimes } from "react-icons/fa"
 
 import eventsStyles from "../../styles/program/events.module.css"
 
@@ -12,7 +12,18 @@ const DescriptionToggler = ({ id, showAll, setShowAll, backgroundColor }) => (
       id={id}
     />
     <label htmlFor={id} style={{ backgroundColor }}>
-      <FaAngleUp color="white" size="1.5rem" />
+      <div className={eventsStyles.icons}>
+        <FaTimes
+          color="white"
+          size="1.5rem"
+          className={eventsStyles.descriptionOpen}
+        />
+        <FaInfo
+          color="white"
+          size="1.5rem"
+          className={eventsStyles.descriptionClosed}
+        />
+      </div>
     </label>
   </div>
 )
