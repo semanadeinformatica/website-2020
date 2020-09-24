@@ -32,8 +32,6 @@ div.speakersContainer {
 
 div.speakerContainer {
   margin: 8px;
-
-  width: min-content;
 }
 
 @media (max-width: 1090px) {
