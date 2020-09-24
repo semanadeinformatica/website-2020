@@ -27,7 +27,7 @@
   height: 100%;
 }
 
-.link_overlay {
+.secondary_overlay {
   z-index: 1;
   opacity: 0;
   height: 0;
@@ -36,11 +36,13 @@
   background-color: black;
   background-color: rgba(255, 160, 0, 0.9) !important;
 
+  text-align: right;
+
   -webkit-clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.info_overlay {
+.main_overlay {
   z-index: 2;
   opacity: 0;
   height: 0;
@@ -53,7 +55,7 @@
   clip-path: polygon(0% 0%, 100% 67%, 100% 100%, 0% 100%);
 }
 
-.container:hover .info_overlay {
+.container:hover .main_overlay {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -70,7 +72,7 @@
   transform: translate(-50%, -99%);
 }
 
-.container:hover .link_overlay {
+.container:hover .secondary_overlay {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -102,23 +104,6 @@
   color: white;
 }
 
-.links {
-  position: relative;
-
-  text-align: right;
-  top: 4px;
-}
-
-.link {
-  color: white;
-  font-size: 1.2em;
-  margin-right: 0.2em;
-}
-
-.link:hover {
-  color: white;
-}
-
 @media (hover: none) {
   .color_overlay {
     display: none;
@@ -135,7 +120,7 @@
     transform: translate(-50%, -100%);
   }
 
-  .info_overlay {
+  .main_overlay {
     opacity: 1;
 
     display: block;
@@ -165,9 +150,4 @@
 
 .container:hover .bg2 {
   background-color: rgba(255, 229, 0, 0.37);
-}
-
-.webIcon {
-  width: 19.19px;
-  padding: 1px;
 }

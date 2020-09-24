@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Occupations from "./occupations"
 import Overlay from "../utils/overlay"
+import LinksList from "../utils/links_list"
 
 import ParticipantsStyle from "../../styles/utils/participants-display.module.css"
 import SpeakerStyle from "../../styles/speakers/single-speaker.module.css"
@@ -15,10 +16,14 @@ const SingleSpeaker = ({ speaker, color }) => (
     <Overlay
       image={speaker.img.childImageSharp.fluid}
       color={color}
-      linkedin={speaker.linkedin}
-      twitter={speaker.twitter}
-      github={speaker.github}
-      website={speaker.website}
+      main={
+        <LinksList
+          linkedin={speaker.linkedin}
+          twitter={speaker.twitter}
+          website={speaker.website}
+          github={speaker.github}
+        />
+      }
     />
     <div className="mt-2">
       <Link to={speaker.path} className={SpeakerStyle.name}>
