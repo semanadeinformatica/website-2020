@@ -35,15 +35,11 @@ const DailySpeakers = ({ talks }) => {
       </div>
       <div className={SpeakersStyles.speakersContainer}>
         {speakers.map((speaker, index) => (
-          <div className={SpeakersStyles.speakerContainer}>
+          <div key={index} className={SpeakersStyles.speakerContainer}>
             {index % 8 < 4 ? (
-              <SingleSpeaker key={index} speaker={speaker} color={index % 4} />
+              <SingleSpeaker speaker={speaker} color={index % 4} />
             ) : (
-              <SingleSpeaker
-                key={index}
-                speaker={speaker}
-                color={3 - (index % 4)}
-              />
+              <SingleSpeaker speaker={speaker} color={3 - (index % 4)} />
             )}
           </div>
         ))}
