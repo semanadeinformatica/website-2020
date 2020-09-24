@@ -1,5 +1,4 @@
 import React from "react"
-import Col from "react-bootstrap/Col"
 import { Link } from "gatsby"
 
 import Occupations from "./occupations"
@@ -9,7 +8,7 @@ import ParticipantsStyle from "../../styles/utils/participants-display.module.cs
 import SpeakerStyle from "../../styles/speakers/single-speaker.module.css"
 
 const SingleSpeaker = ({ speaker, color }) => (
-  <Col
+  <div
     className={ParticipantsStyle.member_container + " mb-3"}
     key={speaker.name}
   >
@@ -27,7 +26,7 @@ const SingleSpeaker = ({ speaker, color }) => (
       </Link>
     </div>
     <Occupations occupations={speaker.occupations} />
-  </Col>
+  </div>
 )
 
 export default SingleSpeaker

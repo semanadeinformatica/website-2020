@@ -1,5 +1,19 @@
-.dayNumber {
-  font-size: 1.5em;
+div.container {
+  margin-top: 4em;
+}
+
+.dailyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dayDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--color5);
 }
 
 .date {
@@ -7,12 +21,15 @@
   font-size: 2em;
 }
 
-.dayDescription {
-  text-align: right;
+.speakersContainer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+
+  justify-content: start;
 }
 
-@media screen and (max-width: 575px) {
-  .dayDescription {
-    text-align: center;
-  }
+.speakerContainer {
+  margin: 0.5em;
+
+  width: min-content;
 }
