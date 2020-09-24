@@ -21,15 +21,41 @@ div.container {
   font-size: 2em;
 }
 
-.speakersContainer {
+div.speakersContainer {
   display: grid;
   grid-template-columns: repeat(4, auto);
 
   justify-content: start;
+
+  width: 1064px;
 }
 
-.speakerContainer {
-  margin: 0.5em;
+div.speakerContainer {
+  margin: 8px;
 
   width: min-content;
+}
+
+@media (max-width: 1090px) {
+  div.speakersContainer {
+    grid-template-columns: repeat(3, auto);
+
+    width: 798px;
+  }
+}
+
+@media (max-width: 830px) {
+  div.speakersContainer {
+    grid-template-columns: repeat(2, auto);
+
+    width: 532px;
+  }
+}
+
+@media (max-width: 550px) {
+  div.speakersContainer {
+    grid-template-columns: repeat(1, auto);
+
+    width: 266px;
+  }
 }
