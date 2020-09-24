@@ -42,6 +42,10 @@
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
 }
 
+.secondaryFiller {
+  height: 1em;
+}
+
 .main_overlay {
   z-index: 2;
   opacity: 0;
@@ -109,7 +113,7 @@
     display: none;
   }
 
-  .link_overlay {
+  .secondary_overlay {
     opacity: 1;
 
     display: block;

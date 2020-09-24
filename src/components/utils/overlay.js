@@ -16,7 +16,11 @@ const MemberOverlay = ({ main, secondary, image, color }) => (
     <div
       className={OverlayStyles.secondary_overlay + " " + OverlayStyles.overlay}
     >
-      {secondary ? secondary : " "}
+      {secondary ? (
+        secondary
+      ) : (
+        <div className={OverlayStyles.secondaryFiller}></div>
+      )}
     </div>
     <div
       className={
