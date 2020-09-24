@@ -8,9 +8,11 @@ import PageBanner from "../components/utils/page_banner"
 import DailySpeakers from "../components/speakers/daily-speakers"
 
 const SpeakersPage = ({ data }) => (
-  <Layout>
+  <Layout darkFooter>
     <SEO title="Speakers" />
-    <PageBanner title="Speakers" />
+    <PageBanner>
+      <h1>Speakers</h1>
+    </PageBanner>
     <Container>
       {data.allMarkdownRemark.group.map(({ edges }, index) => (
         <DailySpeakers talks={edges} key={index} day={index + 1} />
