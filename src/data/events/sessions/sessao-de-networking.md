@@ -9,13 +9,11 @@ path: /sessions/sessao-de-networking
 type: session
 registration: "https://www.eventbrite.com/e/sessao-de-networking-tickets-75774592847"
 companies:
-  - accenture
-  - facebook
-  - kpmg
-  - talkdesk
----
-
-A Sessão de Networking será um momento único para contacto direto entre os estudantes e representantes das empresas. Seguindo um formato de “speed dating”, terás a hipótese de falar em primeira mão com várias empresas diferentes e esclarecer as tuas dúvidas sobre o mundo profissional!
+  - ni1
+  - ni2
+  - ni3
+  - ni4
+---A Sessão de Networking será um momento único para contacto direto entre os estudantes e representantes das empresas. Seguindo um formato de “speed dating”, terás a hipótese de falar em primeira mão com várias empresas diferentes e esclarecer as tuas dúvidas sobre o mundo profissional!
 
 O tempo acabou! Disseste tudo o que tinhas a dizer? Segue para a próxima mesa!
 
