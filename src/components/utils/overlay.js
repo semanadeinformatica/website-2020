@@ -1,4 +1,5 @@
 import React from "react"
+import classnames from "classnames"
 import Img from "gatsby-image"
 
 import OverlayStyles from "../../styles/utils/overlay.module.css"
@@ -10,8 +11,13 @@ const colors = [
   OverlayStyles.bg4,
 ]
 
-const MemberOverlay = ({ main, secondary, image, color }) => (
-  <div className={OverlayStyles.container}>
+const MemberOverlay = ({ main, secondary, image, color, border }) => (
+  <div
+    className={classnames(
+      OverlayStyles.container,
+      border && OverlayStyles.frame
+    )}
+  >
     <Img fluid={image} className={OverlayStyles.image} />
     <div
       className={OverlayStyles.secondary_overlay + " " + OverlayStyles.overlay}
