@@ -1,10 +1,7 @@
 import React from "react"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
 
 import SingleSpeaker from "./single-speaker"
 
-import ParticipantsStyle from "../../styles/utils/participants-display.module.css"
 import SpeakersStyles from "../../styles/speakers/speakers.module.css"
 
 const getSpeakers = talks => {
@@ -22,39 +19,32 @@ const getSpeakers = talks => {
   return speakers
 }
 
-const DailySpeakers = ({ talks, day }) => {
+const DailySpeakers = ({ talks }) => {
   const speakers = getSpeakers(talks)
   const date = new Date(talks[0].node.frontmatter.day)
 
   return (
-    <Row className="mt-5">
-      <Col
-        xl={{ size: "2", offset: "0" }}
-        lg={{ size: "3", offset: "1" }}
-        md={{ size: "3", offset: "0" }}
-        sm="4"
-        xs="12"
-        className={SpeakersStyles.dayDescription + " mb-3"}
-      >
-        <div className={SpeakersStyles.dayNumber}>Dia {day}</div>
-        <div className={SpeakersStyles.date}>{date.getDate() + " Outubro"}</div>
-      </Col>
-      <Col xl="10" lg="6" md="8" sm="8" xs="12">
-        <Row className={ParticipantsStyle.member_row}>
-          {speakers.map((speaker, index) =>
-            index % 8 < 4 ? (
-              <SingleSpeaker key={index} speaker={speaker} color={index % 4} />
+    <div className={SpeakersStyles.dailyContainer}>
+      <div className={SpeakersStyles.dayDescription + " mb-3"}>
+        <h2 className={SpeakersStyles.date}>
+          {date.getDate() + " de Outubro"}
+        </h2>
+        <svg width="140" height="3">
+          <rect width="140" height="3" style={{ fill: "#350052" }} />
+        </svg>
+      </div>
+      <div className={SpeakersStyles.speakersContainer}>
+        {speakers.map((speaker, index) => (
+          <div key={index} className={SpeakersStyles.speakerContainer}>
+            {index % 8 < 4 ? (
+              <SingleSpeaker speaker={speaker} color={index % 4} />
             ) : (
-              <SingleSpeaker
-                key={index}
-                speaker={speaker}
-                color={3 - (index % 4)}
-              />
-            )
-          )}
-        </Row>
-      </Col>
-    </Row>
+              <SingleSpeaker speaker={speaker} color={3 - (index % 4)} />
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
 

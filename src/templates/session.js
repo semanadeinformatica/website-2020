@@ -12,7 +12,7 @@ export default function Template({ data }) {
   const { markdownRemark: session } = data
 
   return (
-    <Layout>
+    <Layout darkFooter>
       <SEO title={session.frontmatter.title} />
       <Banner title={session.frontmatter.title} />
       <Description

@@ -1,16 +1,21 @@
 import React from "react"
 
-import MemberOverlay from "./member_overlay"
+import Overlay from "../utils/overlay"
+import LinksList from "../utils/links_list"
 
 const Member = ({ data, color }) => {
   return (
-    <MemberOverlay
-      name={data.name}
+    <Overlay
+      main={<div>{data.name}</div>}
+      secondary={
+        <LinksList
+          linkedin={data.linkedin}
+          github={data.github}
+          website={data.website}
+        />
+      }
       image={data.img.childImageSharp.fluid}
       color={color}
-      linkedin={data.linkedin}
-      github={data.github}
-      website={data.website}
     />
   )
 }

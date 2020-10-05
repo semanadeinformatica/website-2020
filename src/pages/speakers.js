@@ -7,11 +7,15 @@ import SEO from "../components/common/seo"
 import PageBanner from "../components/utils/page_banner"
 import DailySpeakers from "../components/speakers/daily-speakers"
 
+import SpeakersStyle from "../styles/speakers/speakers.module.css"
+
 const SpeakersPage = ({ data }) => (
-  <Layout>
+  <Layout darkFooter>
     <SEO title="Speakers" />
-    <PageBanner title="Speakers" />
-    <Container>
+    <PageBanner>
+      <h1>Speakers</h1>
+    </PageBanner>
+    <Container className={SpeakersStyle.container}>
       {data.allMarkdownRemark.group.map(({ edges }, index) => (
         <DailySpeakers talks={edges} key={index} day={index + 1} />
       ))}

@@ -1,7 +1,11 @@
 @import url("../common/palette.css");
 
 .bannerContainer {
-  background-color: var(--color1);
+  background: linear-gradient(
+    rgba(255, 52, 31, 1) 0%,
+    rgba(255, 113, 31, 1) 50%,
+    rgba(255, 160, 0, 1) 100%
+  );
   color: var(--white);
   padding-top: 150px;
 }
