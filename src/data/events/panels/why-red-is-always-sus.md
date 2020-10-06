@@ -1,6 +1,6 @@
 ---
 title: Why Red Is Always Sus
-img: ../../../images/svg/cocktail.svg
+img: ../../../images/svg/panel.svg
 
 participants:
   - name: Miguel Oliveira

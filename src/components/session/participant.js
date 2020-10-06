@@ -10,7 +10,7 @@ import PanelStyles from "../../styles/session/panel.module.css"
 
 const Participant = ({ participant, color }) => (
   <Row className={PanelStyles.participant}>
-    <Col md="3">
+    <Col lg="4" md="5">
       <Overlay
         image={participant.img.childImageSharp.fluid}
         color={color}
@@ -25,7 +25,7 @@ const Participant = ({ participant, color }) => (
         border
       />
     </Col>
-    <Col md="9">
+    <Col lg="8" md="7">
       <h3 className={PanelStyles.who}>
         <span className={PanelStyles.name}>{participant.name}</span> @{" "}
         {participant.occupations[0].where}

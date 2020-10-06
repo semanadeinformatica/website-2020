@@ -6,8 +6,8 @@ import Participant from "./participant"
 import PanelStyles from "../../styles/session/panel.module.css"
 
 const Participants = ({ participants }) => (
-  <div className={PanelStyles.container}>
-    <Container>
+  <div className={PanelStyles.wrapper}>
+    <Container className={PanelStyles.container}>
       {participants.map((participant, index) => (
         <Participant
           key={participant.name}
