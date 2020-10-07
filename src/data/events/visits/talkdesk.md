@@ -1,6 +1,6 @@
 ---
 title: Visita à Talkdesk
-img: ../../../images/sponsors/gold/talkdesk.png
+img: ../../../images/sponsors/gold/accenture.png
 day: 2019-10-29
 start_time: 09h30
 end_time: 11h30

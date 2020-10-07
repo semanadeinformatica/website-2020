@@ -1,6 +1,6 @@
 ---
 title: Visita à Pixelmatters
-img: ../../../images/sponsors/silver/pixelmatters.png
+img: ../../../images/sponsors/silver/fabamaq.png
 day: 2019-10-30
 start_time: 10h30
 end_time: 12h15
