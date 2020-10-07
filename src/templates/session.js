@@ -7,6 +7,7 @@ import Banner from "../components/session/banner"
 import Description from "../components/session/description"
 import Companies from "../components/session/companies"
 import Participate from "../components/utils/participate"
+import Participants from "../components/session/participants"
 
 export default function Template({ data }) {
   const { markdownRemark: session } = data
@@ -27,6 +28,9 @@ export default function Template({ data }) {
         <Companies companies={session.frontmatter.companies} />
       ) : (
         ""
+      )}
+      {session.frontmatter.participants && (
+        <Participants participants={session.frontmatter.participants} />
       )}
       <Participate link={session.frontmatter.registration} />
     </Layout>
