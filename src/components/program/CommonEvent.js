@@ -36,6 +36,7 @@ const CommonEvent = ({ color, event }) => {
         <h3 className={eventsStyles.title}>
           <Link style={{ color }} to={path}>
             {path.includes("workshops") && "Workshop: "}{" "}
+            {path.includes("panels") && "Painel: "}{" "}
             <span
               className={
                 !path.match(/sessions|visits/)

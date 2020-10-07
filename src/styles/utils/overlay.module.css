@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+.frame {
+  border: 2px solid var(--color2);
+  border-radius: 20px 20px 20px 0px;
+}
+
 .container .image {
   width: 100%;
 }
