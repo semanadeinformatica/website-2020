@@ -6,71 +6,35 @@
 .sponsorContainer {
   display: flex;
   align-items: center;
-  height: 250px;
+  padding: 1rem 0;
 }
 
 .gold {
-  width: 60%;
+  width: 30rem;
   margin: 0 auto;
 }
 
 .silver {
-  width: 50%;
+  width: 20rem;
   margin: 0 auto;
 }
 
 .bronze {
-  width: 40%;
+  width: 15rem;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1200px) {
-  .gold {
-    width: 55%;
-  }
-
-  .silver {
-    width: 45%;
-  }
-
-  .bronze {
-    width: 35%;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .sponsorContainer {
-    height: 125px;
-  }
-
-  .gold {
-    width: 50%;
-  }
-
-  .silver {
-    width: 40%;
-  }
-
-  .bronze {
-    width: 30%;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .sponsorContainer {
-    height: 125px;
-  }
-
   .gold {
-    width: 45%;
+    width: 20rem;
   }
 
   .silver {
-    width: 35%;
+    width: 15rem;
   }
 
   .bronze {
-    width: 25%;
+    width: 10rem;
   }
 }
 
