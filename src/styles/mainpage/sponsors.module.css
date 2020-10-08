@@ -56,7 +56,7 @@
 .otherSponsors {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
   margin: 4rem 10rem;
 }
