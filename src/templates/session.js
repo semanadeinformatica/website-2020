@@ -57,27 +57,6 @@ export const sessionQuery = graphql`
         place
         start_time
         end_time
-        registration
-        companies
-        participants {
-          name
-          role
-          bio
-          occupations {
-            what
-            where
-          }
-          img {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          linkedin
-          twitter
-          website
-        }
       }
     }
   }
