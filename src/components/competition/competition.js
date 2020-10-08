@@ -100,7 +100,9 @@ const Competition = () => (
       </Container>
     </div>
 
-    <Participate link="https://www.hackerrank.com/sinf-2019" />
+    <Participate link="https://www.hackerrank.com/sinf-2019">
+      <p className={CompetitionStyles.participateText}>Got what it takes?</p>
+    </Participate>
   </div>
 )
 

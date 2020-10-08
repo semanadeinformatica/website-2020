@@ -94,6 +94,13 @@
   color: white;
 }
 
+.participateText {
+  color: var(--white);
+
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
 @media (max-width: 1366px) {
   .squarePrize {
     height: 240px;

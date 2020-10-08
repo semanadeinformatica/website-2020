@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col"
 import Button from "react-bootstrap/Button"
 import ParticipateStyles from "../../styles/utils/participate.module.css"
 
-const Participate = ({ link }) => {
+const Participate = ({ link, children }) => {
   if (!link) return null
 
   return (
@@ -13,10 +13,11 @@ const Participate = ({ link }) => {
       <Container>
         <Row>
           <Col xs="12" className={ParticipateStyles.colContent}>
+            {children}
             <Button
               href={link}
               outline
-              className={ParticipateStyles.participateButton + " mt-4"}
+              className={ParticipateStyles.participateButton}
             >
               Participar
             </Button>
