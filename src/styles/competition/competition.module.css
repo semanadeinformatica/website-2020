@@ -239,3 +239,9 @@
     padding-right: 0 !important;
   }
 }
+
+@media (max-width: 440px) {
+  .participateText {
+    font-size: 2em;
+  }
+}

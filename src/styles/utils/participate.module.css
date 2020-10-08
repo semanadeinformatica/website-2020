@@ -35,3 +35,13 @@
   color: white;
   font-weight: 500;
 }
+
+@media (max-width: 440px) {
+  .participateButton {
+    font-size: 2em !important;
+  }
+
+  .participateButton:hover {
+    font-size: 2em !important;
+  }
+}
