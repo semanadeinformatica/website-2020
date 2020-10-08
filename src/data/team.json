@@ -21,8 +21,8 @@
       },
       {
         "name": "Moisés Rocha",
-        "img": "../images/team/pedro-goncalves.jpg",
-        "linkedin": "https://www.linkedin.com/in/mois%C3%A9s-rocha-608a43173/",
+        "img": "../images/team/default.jpg",
+        "linkedin": "https://www.linkedin.com/in/moisesrocha99/",
         "github": "https://www.github.com/MPDR200011"
       }
     ]
@@ -51,7 +51,7 @@
       },
       {
         "name": "Tito Griné",
-        "img": "../images/team/sofia-lajes.jpg",
+        "img": "../images/team/default.jpg",
         "linkedin": "https://www.linkedin.com/in/titogrine/",
         "github": "https://github.com/TitoGrine"
       }
@@ -81,7 +81,7 @@
       },
       {
         "name": "Paulo Marques",
-        "img": "../images/team/ana-loureiro.jpg",
+        "img": "../images/team/default.jpg",
         "linkedin": "https://www.linkedin.com/in/pdsam/",
         "github": "https://github.com/pdsam/"
       }
@@ -93,7 +93,7 @@
     "members": [
       {
         "name": "Maria Helena Ferreira",
-        "img": "../images/team/margarida-silva.jpg",
+        "img": "../images/team/default.jpg",
         "linkedin": "https://www.linkedin.com/in/maria-helena-ferreira-654627178/",
         "github": "https://github.com/MHelena45"
       }
@@ -111,17 +111,19 @@
       },
       {
         "name": "Tiago Alves",
-        "img": "../images/team/antonio-bezerra.jpg",
+        "img": "../images/team/default.jpg",
         "linkedin": "https://www.linkedin.com/in/tiago-alves-35b066147/",
         "github": "https://github.com/tiago-falves"
       },
       {
         "name": "Francisco Colino",
-        "img": "../images/team/antonio-bezerra.jpg"
+        "img": "../images/team/default.jpg",
+        "linkedin": "https://www.linkedin.com/in/francisco-colino-06281b1a9/",
+        "github": "https://github.com/FranciscoMColino"
       },
       {
         "name": "Luís Silva",
-        "img": "../images/team/antonio-bezerra.jpg",
+        "img": "../images/team/default.jpg",
         "linkedin": "https://www.linkedin.com/in/luis-marques-torres-e-silva-96a304192",
         "github": "https://github.com/LuisMMMTS"
       }
@@ -150,24 +152,24 @@
       },
       {
         "name": "Juliane Marubayashi",
-        "img": "../images/team/afonso-mendonca.jpg",
+        "img": "../images/team/default.jpg",
         "github": "https://github.com/Jumaruba"
       },
       {
         "name": "Eduardo Ribeiro",
-        "img": "../images/team/afonso-mendonca.jpg",
+        "img": "../images/team/default.jpg",
         "linkedin": "https://www.linkedin.com/in/eduardo-ribeiro-a3a5b9192/",
         "github": "https://github.com/EduRibeiro00"
       },
       {
         "name": "Miguel Delgado Pinto",
-        "img": "../images/team/afonso-mendonca.jpg",
+        "img": "../images/team/default.jpg",
         "linkedin": "https://www.linkedin.com/in/migueldelgpinto",
         "github": "https://github.com/MiguelDelPinto"
       },
       {
         "name": "Mark Meehan",
-        "img": "../images/team/afonso-mendonca.jpg",
+        "img": "../images/team/default.jpg",
         "linkedin": "https://www.linkedin.com/in/mark-meehan-b4820b187/",
         "github": "https://github.com/markmeehan99"
       }
