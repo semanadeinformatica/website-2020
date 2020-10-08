@@ -41,7 +41,6 @@ export const eventsQuery = graphql`
             start_time
             title
             path
-            icon
             type
             speakers {
               name

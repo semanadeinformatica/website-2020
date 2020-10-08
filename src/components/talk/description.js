@@ -29,7 +29,7 @@ const Description = ({ data, children }) => {
             </Col>
             <Col>
               {children}
-              {data.type === "Palestra" && <Link link={data.link} />}
+              {data.link && <Link link={data.link} />}
             </Col>
           </Row>
         </Container>

@@ -1,8 +1,7 @@
 ---
 title: Sessão de Encerramento
 
-day: 2019-10-30
-start_time: 18h00
-end_time: 18h30
-place: B032
+day: 2020-11-11
+start_time: 17h50
+end_time: 18h20
 ---

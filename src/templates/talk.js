@@ -47,8 +47,6 @@ export const talkQuery = graphql`
         place
         start_time
         end_time
-        registration
-        link
         speakers {
           name
           bio
@@ -65,20 +63,6 @@ export const talkQuery = graphql`
           }
           linkedin
           twitter
-          website
-        }
-        partnership {
-          name
-          description
-          img {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          facebook
-          instagram
           website
         }
       }
