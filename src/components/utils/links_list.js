@@ -4,7 +4,7 @@ import WebIcon from "../../images/svg/web_icon.inline.svg"
 
 import LinkStyles from "../../styles/utils/link_list.module.css"
 
-const LinksList = (linkedin, twitter, github, website) => (
+const LinksList = ({ linkedin, twitter, github, website }) => (
   <div className={LinkStyles.links}>
     {linkedin ? (
       <a href={linkedin} className={LinkStyles.link}>
