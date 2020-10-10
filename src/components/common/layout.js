@@ -11,15 +11,19 @@ import Navbar from "./navbar"
 import Footer from "./footer"
 
 import Utils from "../../styles/utils/utils.module.css"
+import layoutStyles from "../../styles/common/layout.module.css"
 
 const Layout = ({ children, darkFooter }) => (
-  <>
-    <div className={Utils.sticky}>
-      <Navbar logo />
+  <div className={layoutStyles.wrapper}>
+    <div className={layoutStyles.content}>
+      <div className={Utils.sticky}>
+        <Navbar logo />
+      </div>
+      <main>{children}</main>
     </div>
-    <main>{children}</main>
+
     <Footer darkMode={darkFooter} />
-  </>
+  </div>
 )
 
 Layout.propTypes = {
