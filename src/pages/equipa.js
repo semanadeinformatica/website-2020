@@ -47,6 +47,7 @@ export const pageQuery = graphql`
           linkedin
           name
           img {
+            base
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid
