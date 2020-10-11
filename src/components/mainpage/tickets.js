@@ -6,7 +6,7 @@ const Tickets = () => (
   <section id="tickets" className={ticketsStyles.section}>
     <Container>
       <h3 className={ticketsStyles.lead}>
-        Não vais querer perder esta edição da SINF!
+        Os bilhetes estarão disponíveis brevemente!
       </h3>
       {/* <a
         className={ticketsStyles.signUp}
