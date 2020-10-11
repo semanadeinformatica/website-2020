@@ -37,11 +37,11 @@
 }
 
 .lead {
-  margin-bottom: 4rem;
   font-size: 3rem;
 }
 
 .signUp {
+  margin-top: 4rem;
   font-size: 2rem;
   font-weight: 500;
   color: var(--white);

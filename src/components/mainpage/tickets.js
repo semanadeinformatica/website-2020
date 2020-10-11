@@ -6,16 +6,16 @@ const Tickets = () => (
   <section id="tickets" className={ticketsStyles.section}>
     <Container>
       <h3 className={ticketsStyles.lead}>
-        Não vais querer perder esta edição da SINF!
+        Os bilhetes estarão disponíveis brevemente!
       </h3>
-      <a
+      {/* <a
         className={ticketsStyles.signUp}
         href="https://www.eventbrite.com/e/semana-de-informatica-2019-tickets-74550752307"
         target="_blank"
         rel="noopener noreferrer"
       >
         Inscreve-te
-      </a>
+      </a> */}
     </Container>
   </section>
 )
