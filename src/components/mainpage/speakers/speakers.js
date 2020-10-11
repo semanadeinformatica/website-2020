@@ -25,7 +25,9 @@ const getAllSpeakers = data => {
 const Speakers = () => {
   const data = useStaticQuery(graphql`
     query MainSpeakersQuery {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/talks/" } }) {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/talks|workshops/" } }
+      ) {
         edges {
           node {
             id
