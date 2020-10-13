@@ -11,7 +11,9 @@ const SingleSpeaker = ({ speaker, path }) => {
         alt={speaker.name}
         className={speakersStyles.image}
       />
-      <Link to={path}>Ver palestra</Link>
+      <Link to={path}>
+        Ver {path.includes("talks") ? "palestra" : "workshop"}
+      </Link>
     </div>
   )
 }

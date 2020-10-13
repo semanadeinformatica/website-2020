@@ -25,7 +25,9 @@ const SpeakersPage = ({ data }) => (
 
 export const pageQuery = graphql`
   query SpeakersQuery {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/talks/" } }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/talks|workshops/" } }
+    ) {
       group(field: frontmatter___day) {
         edges {
           node {
