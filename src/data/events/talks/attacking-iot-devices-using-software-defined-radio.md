@@ -4,8 +4,10 @@ title: Introduction to attacking IoT devices using Software-Defined Radio
 speakers:
   - name: Sébastien Dudek
     occupations:
-      - what: Founder of PentHertz, and security researcher at Trend Micro
-        where: PentHertz and Trend Micro
+      - what: Founder
+        where: PentHertz
+      - what: Security Researcher
+        where: Trend Micro
     bio: Sébastien Dudek is a security researcher at Trend Micro and is also the founder of the PentHertz consulting company specialized in wireless and hardware security. He has been particularly passionate about flaws in radio-communication systems, and published researches on mobile security (baseband fuzzing, interception, mapping, etc.), and on data transmission systems using the power-line (Power-Line Communication, HomePlug AV) like domestic PLC plugs, as well as electric cars and charging stations. He also focuses on practical attacks with various technologies such as Wi-Fi, RFID, and other systems that involve wireless communications.
 
     img: "../../../images/speakers/sebastien_dudek.jpg"
