@@ -1,0 +1,17 @@
+[
+  {
+    "date": "9 Novembro",
+    "theme": "Inteligência Artificial",
+    "icon": "robot"
+  },
+  {
+    "date": "10 Novembro",
+    "theme": "Experiência Profissional",
+    "icon": "user-tie"
+  },
+  {
+    "date": "11 Novembro",
+    "theme": "Engenharia de Software",
+    "icon": "laptop-code"
+  }
+]

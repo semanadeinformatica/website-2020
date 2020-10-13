@@ -1,0 +1,27 @@
+@import "./palette.css";
+
+.footerContainer {
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.light {
+  background-color: var(--white);
+  color: var(--color5);
+}
+
+.dark {
+  background-color: var(--color5);
+  color: var(--white);
+}
+
+.footerContainer.dark {
+  background-color: var(--color5);
+  color: var(--white);
+}
+
+@media screen and (max-width: 576px) {
+  .footerContainer {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,22 @@
+@import "../common/palette.css";
+
+.container {
+  width: 100%;
+  padding: 3em 1em;
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+
+  background: linear-gradient(
+    rgba(255, 52, 31, 1) 0%,
+    rgba(255, 113, 31, 1) 60%,
+    rgba(255, 160, 0, 1) 100%
+  );
+
+  color: var(--white);
+}
+
+.container > svg {
+  max-height: 120px;
+}

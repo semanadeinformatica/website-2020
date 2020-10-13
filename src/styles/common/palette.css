@@ -1,0 +1,13 @@
+:root {
+  --color1: #ff341f;
+  --color2: #ff711f;
+  --color3: #ffa000;
+  --color4: #ffe500;
+  --color5: #350052;
+
+  --white: #ffffff;
+}
+
+body {
+  font-size: 16px !important;
+}

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap");
+@import "../common/palette.css";
+
+.wrapper {
+  border: 4px var(--white) solid;
+  border-radius: 10px;
+  background: transparent;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto 2rem auto;
+}
+
+.wrapper li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.wrapper li span {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper li span:first-child {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+.wrapper li span:last-child {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.lead {
+  font-size: 3rem;
+}
+
+.signUp {
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: underline;
+  border: 3px solid var(--white);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+
+.signUp:hover {
+  color: var(--white);
+}
+
+.section {
+  background-color: var(--color5);
+  text-align: center;
+  color: var(--white);
+  padding: 10rem 20%;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    border: none;
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 10% 5%;
+  }
+
+  .wrapper li span:first-child {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .wrapper li span:last-child {
+    font-weight: 100;
+  }
+}
