@@ -4,13 +4,10 @@ import Member from "./member"
 import TeamStyles from "../../styles/team/team.module.css"
 
 const divide_rows = (members, n_per_row) => {
-  const validMembers = members.filter(
-    member => member.img.base !== "default.jpg"
-  )
   const member_rows = []
   let tmp = []
-  for (let i = 0; i < validMembers.length; i++) {
-    const element = validMembers[i]
+  for (let i = 0; i < members.length; i++) {
+    const element = members[i]
     if (i % n_per_row === 0 && tmp.length !== 0) {
       member_rows.push(tmp)
       tmp = []
