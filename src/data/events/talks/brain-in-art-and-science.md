@@ -9,7 +9,7 @@ speakers:
     bio: Artista multimédia, músico e professor. É licenciado em Design de Comunicação pela Faculdade de Belas-Artes da Universidade do Porto e doutorado em Media Digitais pela Faculdade de Engenharia da Universidade do Porto (com Universidade Nova de Lisboa, Programa UT Austin | Portugal). É docente da Escola Superior de Media Artes e Design, Politécnico do Porto.
 
     img: "../../../images/speakers/horacio_marques.jpg"
-    website: https://horacioarts.com
+    website: http://horacioarts.com
 
 day: 2020-11-09
 start_time: 15h40
