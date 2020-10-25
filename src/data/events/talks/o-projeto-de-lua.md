@@ -9,7 +9,7 @@ speakers:
     bio: Roberto Ierusalimschy é Professor Associado do Departamento de Informática na PUC-Rio, onde trabalha com desenvolvimento e implementação de linguagens de programação. Roberto é também o arquiteto principal da linguagem Lua. Em 2012 foi Tinker Professor na Universidade Stanford. Em 2013 recebeu o Prêmio do Mérito Científico da Sociedade Brasileira de Computação. Roberto é palestrante senior da SBC, foi Distinguished Speaker da ACM e é membro do grupo de trabalho em Projeto de Linguagens da IFIP.
 
     img: "../../../images/speakers/roberto_ierusalimschy.jpg"
-    website: www.inf.puc-rio.br/~roberto/
+    website: http://www.inf.puc-rio.br/~roberto/
 
 day: 2020-11-11
 start_time: 15h20
