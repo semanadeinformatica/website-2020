@@ -17,7 +17,7 @@ end_time: 17h30
 place: Online Room
 path: /workshops/build-multplaform-desktop-app-using-web-technologies/
 type: Workshop
-registration:
+registration: https://www.eventbrite.pt/e/bilhetes-sinf-2020-workshop-how-to-build-desktop-apps-using-web-tecnologies-127549139911
 ---
 
 Learn how to build a native desktop app for Windows, Mac or Linux using JavaScript/HTML/CSS (Node.js, React.js and Electron.js). Making native desktop app development faster and easier with technologies you already know.

@@ -7,7 +7,7 @@ end_time: 20h10
 place: Online Room
 path: /sessions/pitch-de-oportunidades
 type: session
-registration:
+registration: https://www.eventbrite.pt/e/bilhetes-pitch-de-oportunidades-sinf-2020-127545442853
 ---
 
 Durante o Pitch de Oportunidades, várias empresas farão um pequeno pitch promocional e, ainda que num contexto remoto, são promovidos momentos de networking com as empresas presentes.

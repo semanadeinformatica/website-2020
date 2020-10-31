@@ -19,7 +19,7 @@ end_time: 17h30
 place: Online Room
 path: /workshops/elixir-journey-from-basics-to-actor-model
 type: Workshop
-registration:
+registration: https://www.eventbrite.pt/e/bilhetes-sinf-2020-workshop-elixir-and-a-journey-from-basics-to-actor-model-127547956371
 ---
 
 Elixir is a functional language that inherits the power of Erlang and its benefits with an enjoyable and friendly syntax. Elixir is designed for building fault tolerant and scalable systems. The workshop will cover the basics around the language and will touch the actor model paradigm.

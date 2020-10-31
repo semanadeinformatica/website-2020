@@ -21,7 +21,7 @@ end_time: 17h30
 place: Online Room
 path: /workshops/going-back-in-time-with-reactjs
 type: Workshop
-registration:
+registration: https://www.eventbrite.pt/e/bilhetes-sinf-2020-workshop-going-back-in-time-with-reactjs-127549984437
 ---
 
 Don't you hate it when you accidentally click a button you didn't want to, and then your grandma receives an unwanted e-mail?
