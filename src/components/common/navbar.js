@@ -83,11 +83,11 @@ export default class NavBar extends React.Component {
         text: "Equipa",
         internal: true,
       },
-      // {
-      //   url: "/competicao-programacao",
-      //   text: "Competição",
-      //   internal: true,
-      // },
+      {
+        url: "/competicao-programacao",
+        text: "Competição",
+        internal: true,
+      },
       {
         url: "https://ctf.sinf.pt",
         text: "CTF",
