@@ -58,6 +58,10 @@ export const sessionQuery = graphql`
         start_time
         end_time
         registration
+        companies {
+          name
+          link
+        }
         participants {
           name
           occupations {

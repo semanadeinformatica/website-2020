@@ -29,9 +29,13 @@ const Companies = ({ companies }) => {
       }
     }
   `)
-  const companiesData = data.allMarkdownRemark.edges.filter(element =>
-    companies.includes(element.node.frontmatter.name)
-  )
+
+  const companiesData = companies.map(company => ({
+    ...company,
+    ...data.allMarkdownRemark.edges.find(
+      element => element.node.frontmatter.name === company.name
+    ),
+  }))
 
   return (
     <div className={CompaniesStyles.companiesContainer}>
@@ -44,7 +48,11 @@ const Companies = ({ companies }) => {
               key={company.node.frontmatter.name}
               className={CompaniesStyles.companyLogo}
             >
-              <Img fluid={company.node.frontmatter.img.childImageSharp.fluid} />
+              <a href={company.link} target="_blank" rel="noopener noreferrer">
+                <Img
+                  fluid={company.node.frontmatter.img.childImageSharp.fluid}
+                />
+              </a>
             </Col>
           ))}
         </Row>
