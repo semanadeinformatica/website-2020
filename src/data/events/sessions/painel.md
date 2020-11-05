@@ -3,16 +3,6 @@ title: Arranjei Um Estagio Lá Fora e Olhem No Que Deu
 img: ../../../images/svg/panel.svg
 
 participants:
-  - name: Ademar Aguiar
-    occupations:
-      - what: Professor Associado
-        where: FEUP
-    bio: Engenheiro de software desde sempre, é Professor Associado na Faculdade de Engenharia da Universidade do Porto, coordenador de centro e investigador no INESCTEC, pragmático, realiza diversas actividades relacionadas com software, desde investigação e conceptualização de produtos, a programação e iniciativas empresariais, tentando sempre sustentar o seu conhecimento em experiência adquirida em projectos reais e de impacto relevante. Tem como especiais áreas de interesse o design e implementação de sistemas de software de elevada complexidade usando métodos ágeis (XP, Scrum) e ambientes colaborativos. Co-autor do livro "A Scrum Book The Spirit of the Game".  Foi responsável pela implementação de projectos inovadores, pessoais e contratados, entre os quais, os mais recentes incidem nas áreas de educação com novos media digitais, distribuição de ajuda humanitária e ferramentas de email para gestão de informação e produtividade pessoal.
-    role: Moderador
-
-    img: ../../../images/speakers/ademar_aguiar.jpg
-    linkedin: https://www.linkedin.com/in/ademaraguiar/
-
   - name: André Rocha
     occupations:
       - what: Estudante do 4º ano
