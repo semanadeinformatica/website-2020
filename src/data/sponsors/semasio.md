@@ -1,5 +1,5 @@
 ---
 name: semasio
-type: silver
-img: "../../images/sponsors/silver/semasio.png"
+type: gold
+img: "../../images/sponsors/gold/semasio.png"
 ---
