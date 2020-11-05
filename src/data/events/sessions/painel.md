@@ -3,6 +3,17 @@ title: Arranjei Um Estagio Lá Fora e Olhem No Que Deu
 img: ../../../images/svg/panel.svg
 
 participants:
+  - name: Nuno Flores
+    occupations:
+      - what: Professor Auxiliar
+        where: FEUP
+    bio: 'Nuno Flores é Professor Auxiliar no Departamento de Engenharia Informática da Faculdade de Engenharia da Universidade do Porto (FEUP), onde lecciona unidades curriculares nas áreas da Programação, Engenharia de Software, Metodologias Ágeis e Arquitetura de Software (frameworks e padrões). É investigador no Software Engineering Research Group da FEUP onde se foca na gestão colaborativa de conhecimento de software e na aprendizagem de software e da engenharia de software. É investigador sénior no INESC TEC e membro do Hillside Group. A sua tese de doutoramento em Engenharia de Software intitulou-se: "Patterns and Tools for improving Framework Understanding: a Collaborative Approach”. Mais recentemente tem centrado a sua investigação na aplicação de técnicas de jogos para a melhoria da aprendizagem da engenharia de software.'
+    role: Moderador
+
+    img: "../../../images/speakers/nuno_flores.jpg"
+    linkedin: https://www.linkedin.com/in/nunoflores
+    twitter: https://twitter.com/nunohrflores
+
   - name: André Rocha
     occupations:
       - what: Estudante do 4º ano
