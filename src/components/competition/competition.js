@@ -60,7 +60,7 @@ const Competition = () => (
                 </li>
                 <li>
                   Serão lançados diariamente 2 novos desafios, nos dias 8, 9 e
-                  10 de novembro às 21h00.
+                  10 de novembro às 21h30.
                 </li>
                 <li>
                   Apenas estarás habilitado aos prémios caso tenhas tenhas
