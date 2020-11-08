@@ -50,7 +50,7 @@ const Competition = () => (
             <Col xs="12" className={CompetitionStyles.conditionList}>
               <ul>
                 <li>
-                  A Competição terá início dia 8 de Novembro às 21h00,
+                  A Competição terá início dia 8 de Novembro às 21h30,
                   decorrendo durante os 3 próximos dias até dia 11 de Novembro
                   às 16:00.
                 </li>
