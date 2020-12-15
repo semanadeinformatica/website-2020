@@ -88,11 +88,6 @@ export default class NavBar extends React.Component {
         text: "Competição",
         internal: true,
       },
-      {
-        url: "https://ctf.sinf.pt",
-        text: "CTF",
-        internal: false,
-      },
     ]
 
     this.pastEditions = [
